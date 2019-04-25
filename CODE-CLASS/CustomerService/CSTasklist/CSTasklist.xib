@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CSTasklist" customModule="AlMutlaqRealEstate" customModuleProvider="target">
+            <connections>
+                <outlet property="lblHeader" destination="JxC-M9-B4P" id="hh8-0m-Z2J"/>
+                <outlet property="tabvList" destination="EE7-1T-zZG" id="N9J-rf-gtO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewtop" destination="ZL7-4f-wIw" id="7Ag-V9-pvB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZL7-4f-wIw">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JxC-M9-B4P">
+                            <rect key="frame" x="68" y="24" width="238" height="36"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRW-M5-TO1">
+                            <rect key="frame" x="8" y="28" width="28" height="28"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="menu-w"/>
+                            <connections>
+                                <action selector="pressSlide:" destination="-1" eventType="touchUpInside" id="bu8-xu-PeU"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.30588235289999999" green="0.50588235290000005" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="O7v-dL-oNh"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EE7-1T-zZG">
+                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="adl-Xy-AYm"/>
+                        <outlet property="delegate" destination="-1" id="5Xo-Io-gxd"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="EE7-1T-zZG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3w1-co-f8M"/>
+                <constraint firstItem="EE7-1T-zZG" firstAttribute="top" secondItem="ZL7-4f-wIw" secondAttribute="bottom" id="4qh-VQ-QS0"/>
+                <constraint firstItem="ZL7-4f-wIw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9Bc-S9-Ja0"/>
+                <constraint firstAttribute="trailing" secondItem="EE7-1T-zZG" secondAttribute="trailing" id="9Me-HC-Hd8"/>
+                <constraint firstAttribute="trailing" secondItem="ZL7-4f-wIw" secondAttribute="trailing" id="TzD-cw-s0R"/>
+                <constraint firstItem="ZL7-4f-wIw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="WXL-YR-UI9"/>
+                <constraint firstAttribute="bottom" secondItem="EE7-1T-zZG" secondAttribute="bottom" id="oTr-IS-HRK"/>
+                <constraint firstItem="EE7-1T-zZG" firstAttribute="top" secondItem="ZL7-4f-wIw" secondAttribute="bottom" id="rRV-TX-AK7"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <point key="canvasLocation" x="-389.60000000000002" y="27.436281859070466"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="menu-w" width="32" height="32"/>
+    </resources>
+</document>

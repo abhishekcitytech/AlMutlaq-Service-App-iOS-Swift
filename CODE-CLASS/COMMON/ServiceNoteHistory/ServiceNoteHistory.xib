@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ServiceNoteHistory" customModule="AlMutlaqRealEstate" customModuleProvider="target">
+            <connections>
+                <outlet property="lblServiceHistory" destination="RfF-1S-8O1" id="dPq-ze-Dkh"/>
+                <outlet property="pressCross" destination="egr-qW-mVr" id="tk5-Lo-2zf"/>
+                <outlet property="tableServiceNote" destination="Pm3-FL-c0z" id="D5E-cR-uov"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CBP-qU-uhg">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Service note history" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RfF-1S-8O1">
+                            <rect key="frame" x="68" y="25" width="238" height="36"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="21"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egr-qW-mVr">
+                            <rect key="frame" x="335" y="25" width="32" height="32"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="cross"/>
+                            <connections>
+                                <action selector="pressCross:" destination="-1" eventType="touchUpInside" id="SzD-5X-LBR"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.30588235289999999" green="0.50588235290000005" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="K1x-LT-i55"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Pm3-FL-c0z">
+                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="JQI-Nb-z7X"/>
+                        <outlet property="delegate" destination="-1" id="gc1-1g-PYe"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Pm3-FL-c0z" firstAttribute="top" secondItem="CBP-qU-uhg" secondAttribute="bottom" id="7LC-m3-eQ9"/>
+                <constraint firstItem="Pm3-FL-c0z" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Fph-xO-ZXh"/>
+                <constraint firstAttribute="bottom" secondItem="Pm3-FL-c0z" secondAttribute="bottom" id="MyE-OJ-Y33"/>
+                <constraint firstItem="Pm3-FL-c0z" firstAttribute="top" secondItem="CBP-qU-uhg" secondAttribute="bottom" id="TVh-Ka-fMh"/>
+                <constraint firstItem="CBP-qU-uhg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dU1-4u-Ot9"/>
+                <constraint firstItem="CBP-qU-uhg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="elI-Th-BAh"/>
+                <constraint firstAttribute="trailing" secondItem="CBP-qU-uhg" secondAttribute="trailing" id="h7R-LS-Py7"/>
+                <constraint firstAttribute="trailing" secondItem="Pm3-FL-c0z" secondAttribute="trailing" id="sRP-jh-Q5t"/>
+            </constraints>
+            <point key="canvasLocation" x="15" y="121"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cross" width="32" height="32"/>
+    </resources>
+</document>

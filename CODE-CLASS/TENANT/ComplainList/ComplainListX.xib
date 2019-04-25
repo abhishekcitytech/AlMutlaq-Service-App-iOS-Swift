@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ComplainList" customModule="AlMutlaqRealEstate" customModuleProvider="target">
+            <connections>
+                <outlet property="btnComplain" destination="jH7-5A-Erp" id="NlA-Uv-N8Z"/>
+                <outlet property="btnSuggestion" destination="dpI-6a-kPF" id="JVD-Or-WMy"/>
+                <outlet property="imgvSelected" destination="pYN-3a-JtX" id="RXi-vI-s4d"/>
+                <outlet property="tabvList" destination="Mjz-P9-eM5" id="RJV-3m-q0i"/>
+                <outlet property="view" destination="iN0-l3-epB" id="dpJ-HS-naW"/>
+                <outlet property="viewHeader" destination="Ght-ON-4oC" id="GZc-bP-Dqs"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2X8-56-C6W">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="84"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Complaint List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E8t-fd-Ght">
+                            <rect key="frame" x="68" y="40" width="238" height="36"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="21"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="giI-zj-Lcg">
+                            <rect key="frame" x="8" y="48" width="28" height="28"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="back"/>
+                            <connections>
+                                <action selector="pressSlide:" destination="-1" eventType="touchUpInside" id="NMh-X4-z2I"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ak-V0-rDV">
+                            <rect key="frame" x="339" y="48" width="28" height="28"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="addcomplaint"/>
+                            <connections>
+                                <action selector="pressAddComplaint:" destination="-1" eventType="touchUpInside" id="W5d-a8-1Ij"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.30588235289999999" green="0.50588235290000005" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="84" id="lFb-7F-HQD"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Mjz-P9-eM5">
+                    <rect key="frame" x="0.0" y="137" width="375" height="658"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="0mN-6x-I4f"/>
+                        <outlet property="delegate" destination="-1" id="LVi-tK-P4w"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ght-ON-4oC">
+                    <rect key="frame" x="0.0" y="84" width="375" height="52"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pYN-3a-JtX">
+                            <rect key="frame" x="0.0" y="0.0" width="188" height="52"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jH7-5A-Erp">
+                            <rect key="frame" x="0.0" y="0.0" width="188" height="52"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" title="Complaint">
+                                <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="0.20784313730000001" green="0.39607843139999999" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="pressComplain:" destination="-1" eventType="touchUpInside" id="OGf-D9-wbw"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpI-6a-kPF">
+                            <rect key="frame" x="188" y="0.0" width="187" height="52"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" title="Suggestion">
+                                <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="0.20784313730000001" green="0.39607843139999999" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="pressSuggestion:" destination="-1" eventType="touchUpInside" id="4oa-Tm-mdU"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="52" id="Yuv-kt-0R7"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Ght-ON-4oC" secondAttribute="trailing" id="0Ho-ta-QxM"/>
+                <constraint firstItem="Ght-ON-4oC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1cG-uZ-FXY"/>
+                <constraint firstItem="Ght-ON-4oC" firstAttribute="top" secondItem="2X8-56-C6W" secondAttribute="bottom" id="4aA-C0-Rxc"/>
+                <constraint firstItem="2X8-56-C6W" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="8rp-hZ-Bkb"/>
+                <constraint firstAttribute="trailing" secondItem="Mjz-P9-eM5" secondAttribute="trailing" id="Pcd-JU-48c"/>
+                <constraint firstItem="Ght-ON-4oC" firstAttribute="top" secondItem="2X8-56-C6W" secondAttribute="bottom" id="U25-UB-Pd9"/>
+                <constraint firstAttribute="bottom" secondItem="Mjz-P9-eM5" secondAttribute="bottom" constant="17" id="drf-bH-fDI"/>
+                <constraint firstItem="Mjz-P9-eM5" firstAttribute="top" secondItem="Ght-ON-4oC" secondAttribute="bottom" constant="1" id="ghc-6Q-IXV"/>
+                <constraint firstItem="Mjz-P9-eM5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gzy-Fk-Ryc"/>
+                <constraint firstAttribute="trailing" secondItem="2X8-56-C6W" secondAttribute="trailing" id="ier-7O-Xwk"/>
+                <constraint firstItem="2X8-56-C6W" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jtF-J3-euw"/>
+                <constraint firstItem="Mjz-P9-eM5" firstAttribute="top" secondItem="Ght-ON-4oC" secondAttribute="bottom" constant="1" id="xu1-5k-GbM"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <point key="canvasLocation" x="40.799999999999997" y="47.290640394088669"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="addcomplaint" width="32" height="32"/>
+        <image name="back" width="32" height="32"/>
+    </resources>
+</document>

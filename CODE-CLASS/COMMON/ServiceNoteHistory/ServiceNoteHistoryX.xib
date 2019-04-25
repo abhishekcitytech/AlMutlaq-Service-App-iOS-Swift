@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ServiceNoteHistory" customModule="AlMutlaqRealEstate" customModuleProvider="target">
+            <connections>
+                <outlet property="lblServiceHistory" destination="xEm-VK-A9d" id="17f-bg-v3s"/>
+                <outlet property="pressCross" destination="pdz-51-PVn" id="pcd-1C-Q2c"/>
+                <outlet property="tableServiceNote" destination="KfD-WP-KjA" id="fCD-y6-Gc3"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Vzw-ry-8nr"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KfD-WP-KjA">
+                    <rect key="frame" x="0.0" y="84" width="375" height="712"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ZXh-FP-T3Y"/>
+                        <outlet property="delegate" destination="-1" id="7pp-Rr-nFw"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3fZ-eq-FQv">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="84"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Service note history" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xEm-VK-A9d">
+                            <rect key="frame" x="68" y="43" width="238" height="36"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="21"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdz-51-PVn">
+                            <rect key="frame" x="335" y="44" width="32" height="32"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="cross"/>
+                            <connections>
+                                <action selector="pressCross:" destination="-1" eventType="touchUpInside" id="RTN-wr-XoG"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.30588235289999999" green="0.50588235290000005" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="84" id="2mQ-pa-ppi"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="3fZ-eq-FQv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1OD-Xg-2Mj"/>
+                <constraint firstItem="3fZ-eq-FQv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="BWZ-0n-rEB"/>
+                <constraint firstItem="KfD-WP-KjA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="IqR-Tw-DPy"/>
+                <constraint firstAttribute="bottom" secondItem="KfD-WP-KjA" secondAttribute="bottom" constant="16" id="Nu6-jn-WSX"/>
+                <constraint firstAttribute="trailing" secondItem="3fZ-eq-FQv" secondAttribute="trailing" id="VDX-qa-cbR"/>
+                <constraint firstAttribute="trailing" secondItem="KfD-WP-KjA" secondAttribute="trailing" id="gOA-ER-kcu"/>
+                <constraint firstItem="KfD-WP-KjA" firstAttribute="top" secondItem="3fZ-eq-FQv" secondAttribute="bottom" id="kew-4w-wPp"/>
+                <constraint firstItem="KfD-WP-KjA" firstAttribute="top" secondItem="3fZ-eq-FQv" secondAttribute="bottom" id="n24-Pj-gEd"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <point key="canvasLocation" x="132" y="154.43349753694582"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cross" width="85" height="85"/>
+    </resources>
+</document>

@@ -7,15 +7,277 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D99F3164D4CE5D2D1D292C1 /* Pods_AlMutlaqRealEstate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7C9C1AA54F638C17F3EF3D /* Pods_AlMutlaqRealEstate.framework */; };
+		7E09379420FDF4D9000FDBB1 /* Servicestatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E09379220FDF4D9000FDBB1 /* Servicestatus.swift */; };
+		7E09379520FDF4D9000FDBB1 /* Servicestatus.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E09379320FDF4D9000FDBB1 /* Servicestatus.xib */; };
+		7E127EC321DA3E9E00205B24 /* FSCalendarExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E127EA321DA3E7F00205B24 /* FSCalendarExtensions.m */; };
+		7E127EC421DA3E9E00205B24 /* FSCalendarWeekdayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E127EA921DA3E8A00205B24 /* FSCalendarWeekdayView.m */; };
+		7E127EC521DA3E9E00205B24 /* FSCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E127EAA21DA3E8B00205B24 /* FSCalendar.m */; };
+		7E127EC621DA3E9E00205B24 /* FSCalendarCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E127EAC21DA3E8D00205B24 /* FSCalendarCalculator.m */; };
+		7E127EC721DA3E9E00205B24 /* FSCalendarDelegationProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E127EAD21DA3E8E00205B24 /* FSCalendarDelegationProxy.m */; };
+		7E127EC821DA3E9E00205B24 /* FSCalendarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E127EAE21DA3E8F00205B24 /* FSCalendarAppearance.m */; };
+		7E127EC921DA3E9E00205B24 /* FSCalendarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E127EB021DA3E9100205B24 /* FSCalendarConstants.m */; };
+		7E127ECA21DA3E9E00205B24 /* FSCalendarDelegationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E127EB221DA3E9300205B24 /* FSCalendarDelegationFactory.m */; };
+		7E127ECB21DA3E9E00205B24 /* FSCalendarCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E127EB321DA3E9400205B24 /* FSCalendarCollectionView.m */; };
+		7E127ECC21DA3E9E00205B24 /* FSCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E127EB421DA3E9400205B24 /* FSCalendarCell.m */; };
+		7E127ECD21DA3E9E00205B24 /* FSCalendarSeparatorDecorationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E127EB521DA3E9500205B24 /* FSCalendarSeparatorDecorationView.m */; };
+		7E127ECE21DA3E9E00205B24 /* FSCalendarStickyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E127EB621DA3E9600205B24 /* FSCalendarStickyHeader.m */; };
+		7E127ECF21DA3E9E00205B24 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E127EB721DA3E9700205B24 /* Info.plist */; };
+		7E127ED021DA3E9E00205B24 /* FSCalendarTransitionCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E127EBA21DA3E9900205B24 /* FSCalendarTransitionCoordinator.m */; };
+		7E127ED121DA3E9E00205B24 /* FSCalendarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E127EBC21DA3E9A00205B24 /* FSCalendarHeaderView.m */; };
+		7E127ED221DA3E9E00205B24 /* FSCalendarCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E127EC121DA3E9D00205B24 /* FSCalendarCollectionViewLayout.m */; };
+		7E127ED421DA3FC800205B24 /* CSDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E127ED321DA3FC700205B24 /* CSDashboard.swift */; };
+		7E13B87022099E3100F7915C /* Default-812h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E13B86822099E2B00F7915C /* Default-812h@3x.png */; };
+		7E13B87122099E3100F7915C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E13B86922099E2C00F7915C /* Default-568h@2x.png */; };
+		7E13B87222099E3100F7915C /* Default-812h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E13B86A22099E2D00F7915C /* Default-812h@2x.png */; };
+		7E13B87322099E3100F7915C /* Default-802h.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E13B86B22099E2E00F7915C /* Default-802h.png */; };
+		7E13B87422099E3100F7915C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E13B86C22099E2E00F7915C /* Default.png */; };
+		7E13B87522099E3100F7915C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E13B86D22099E2F00F7915C /* Default@2x.png */; };
+		7E13B87622099E3100F7915C /* Default-667h.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E13B86E22099E3000F7915C /* Default-667h.png */; };
+		7E13B87722099E3100F7915C /* Default-736h.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E13B86F22099E3000F7915C /* Default-736h.png */; };
+		7E13B87A22099EAD00F7915C /* serviceimagebg.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E13B87822099EAC00F7915C /* serviceimagebg.png */; };
+		7E13B87B22099EAD00F7915C /* mutlaqoffice.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E13B87922099EAD00F7915C /* mutlaqoffice.png */; };
+		7E31646420EBA0A500DE158D /* icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E31645720EBA0A400DE158D /* icon-60@2x.png */; };
+		7E31646520EBA0A500DE158D /* icon-1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E31645820EBA0A400DE158D /* icon-1024.png */; };
+		7E31646620EBA0A500DE158D /* icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E31645920EBA0A400DE158D /* icon-40.png */; };
+		7E31646720EBA0A500DE158D /* icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E31645A20EBA0A400DE158D /* icon-40@2x.png */; };
+		7E31646820EBA0A500DE158D /* icon-29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E31645B20EBA0A400DE158D /* icon-29@3x.png */; };
+		7E31646920EBA0A500DE158D /* icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E31645C20EBA0A400DE158D /* icon-29.png */; };
+		7E31646A20EBA0A500DE158D /* icon-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E31645D20EBA0A400DE158D /* icon-40@3x.png */; };
+		7E31646B20EBA0A500DE158D /* icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E31645E20EBA0A500DE158D /* icon-60.png */; };
+		7E31646C20EBA0A500DE158D /* icon-20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E31645F20EBA0A500DE158D /* icon-20@2x.png */; };
+		7E31646D20EBA0A500DE158D /* icon-20@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E31646020EBA0A500DE158D /* icon-20@3x.png */; };
+		7E31646E20EBA0A500DE158D /* icon-29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E31646120EBA0A500DE158D /* icon-29@2x.png */; };
+		7E31646F20EBA0A500DE158D /* icon-20.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E31646220EBA0A500DE158D /* icon-20.png */; };
+		7E31647020EBA0A500DE158D /* icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E31646320EBA0A500DE158D /* icon-60@3x.png */; };
+		7E32466E20EE18D800B1C0FB /* BridgeObjectiveC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E32466D20EE18D800B1C0FB /* BridgeObjectiveC.m */; };
 		7E3B358520EB86BB00690236 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3B358420EB86BB00690236 /* AppDelegate.swift */; };
 		7E3B358720EB86BB00690236 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3B358620EB86BB00690236 /* ViewController.swift */; };
 		7E3B358A20EB86BB00690236 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3B358820EB86BB00690236 /* Main.storyboard */; };
 		7E3B358D20EB86BB00690236 /* AlMutlaqRealEstate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E3B358B20EB86BB00690236 /* AlMutlaqRealEstate.xcdatamodeld */; };
 		7E3B358F20EB86BB00690236 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E3B358E20EB86BB00690236 /* Assets.xcassets */; };
 		7E3B359220EB86BB00690236 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3B359020EB86BB00690236 /* LaunchScreen.storyboard */; };
+		7E3B359B20EB86F200690236 /* login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3B359920EB86F200690236 /* login.swift */; };
+		7E3B359C20EB86F200690236 /* login.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E3B359A20EB86F200690236 /* login.xib */; };
+		7E3B35A320EB873300690236 /* TenantDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3B35A120EB873300690236 /* TenantDashboard.swift */; };
+		7E3B35A420EB873300690236 /* TenantDashboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E3B35A220EB873300690236 /* TenantDashboard.xib */; };
+		7E3B35AB20EB878800690236 /* Tenantjobcreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3B35A920EB878800690236 /* Tenantjobcreate.swift */; };
+		7E3B35AF20EB87C800690236 /* JobDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3B35AD20EB87C800690236 /* JobDetail.swift */; };
+		7E3B35B020EB87C800690236 /* JobDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E3B35AE20EB87C800690236 /* JobDetail.xib */; };
+		7E3B35C320EB8E4B00690236 /* JobTypeMaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3B35C120EB8E4B00690236 /* JobTypeMaster.swift */; };
+		7E3B35C420EB8E4B00690236 /* JobTypeMaster.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E3B35C220EB8E4B00690236 /* JobTypeMaster.xib */; };
+		7E3B35CB20EB8FDE00690236 /* AllImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E3B35CA20EB8FDE00690236 /* AllImages.xcassets */; };
+		7E3B35CE20EB901300690236 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3B35CD20EB901300690236 /* QuartzCore.framework */; };
+		7E3B35D020EB901A00690236 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3B35CF20EB901900690236 /* CoreGraphics.framework */; };
+		7E40708C21B5572E00467DCB /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E40708321B5571600467DCB /* Roboto-Medium.ttf */; };
+		7E40708D21B5572E00467DCB /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E40708421B5572600467DCB /* Roboto-Light.ttf */; };
+		7E40708E21B5572E00467DCB /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E40708521B5572800467DCB /* Roboto-Thin.ttf */; };
+		7E40708F21B5572E00467DCB /* RobotoCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E40708621B5572A00467DCB /* RobotoCondensed-Light.ttf */; };
+		7E40709021B5572E00467DCB /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E40708721B5572B00467DCB /* Roboto-Regular.ttf */; };
+		7E40709121B5572E00467DCB /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E40708821B5572C00467DCB /* Roboto-Bold.ttf */; };
+		7E40709221B5572E00467DCB /* RobotoCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E40708921B5572D00467DCB /* RobotoCondensed-Regular.ttf */; };
+		7E40709321B5572E00467DCB /* RobotoCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E40708A21B5572E00467DCB /* RobotoCondensed-Bold.ttf */; };
+		7E40709421B5572E00467DCB /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E40708B21B5572E00467DCB /* Roboto-Black.ttf */; };
+		7E5A303720FF059F002542C5 /* Tutorials.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E5A303620FF059F002542C5 /* Tutorials.xib */; };
+		7E5A303920FF08BC002542C5 /* Tutorials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5A303820FF08BC002542C5 /* Tutorials.swift */; };
+		7E5A304620FF62CC002542C5 /* AddComplain.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E5A304420FF62CC002542C5 /* AddComplain.xib */; };
+		7E5A304B20FF6465002542C5 /* ComplainList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E5A304920FF6465002542C5 /* ComplainList.xib */; };
+		7E5A305020FF6491002542C5 /* Complaindetails.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E5A304E20FF6491002542C5 /* Complaindetails.xib */; };
+		7E5A305520FF789C002542C5 /* CSDashboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E5A305320FF789C002542C5 /* CSDashboard.xib */; };
+		7E5A305920FF7A37002542C5 /* CSTasklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5A305720FF7A37002542C5 /* CSTasklist.swift */; };
+		7E5A305A20FF7A37002542C5 /* CSTasklist.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E5A305820FF7A37002542C5 /* CSTasklist.xib */; };
+		7E5A305F20FF7B22002542C5 /* CSTaskdetails.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E5A305D20FF7B21002542C5 /* CSTaskdetails.xib */; };
+		7E65B68121DC8E6E00514477 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E65B68021DC8E6E00514477 /* WebKit.framework */; };
+		7E72AF19213696E2006D95BF /* loginX.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E72AF16213696E1006D95BF /* loginX.xib */; };
+		7E72AF1F213696FA006D95BF /* SlidemenuX.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E72AF1C213696FA006D95BF /* SlidemenuX.xib */; };
+		7E72AF2521369743006D95BF /* TenantDashboard5S.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E72AF2221369742006D95BF /* TenantDashboard5S.xib */; };
+		7E72AF2621369743006D95BF /* TenantDashboardX.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E72AF2321369742006D95BF /* TenantDashboardX.xib */; };
+		7E72AF2721369743006D95BF /* TenantDashboard6Plus.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E72AF2421369742006D95BF /* TenantDashboard6Plus.xib */; };
+		7E72AF2D21369786006D95BF /* JobTypeMasterX.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E72AF2A21369786006D95BF /* JobTypeMasterX.xib */; };
+		7E72AF3521369C50006D95BF /* Tenantjobcreate.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E72AF3421369C4F006D95BF /* Tenantjobcreate.xib */; };
+		7E72AF3921369C5F006D95BF /* Tenantjobcreate5S.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E72AF3621369C5E006D95BF /* Tenantjobcreate5S.xib */; };
+		7E72AF3A21369C5F006D95BF /* TenantjobcreateX.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E72AF3721369C5F006D95BF /* TenantjobcreateX.xib */; };
+		7E72AF3B21369C5F006D95BF /* Tenantjobcreate6Plus.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E72AF3821369C5F006D95BF /* Tenantjobcreate6Plus.xib */; };
+		7E72AF3F21369C73006D95BF /* TenantThankYouPageX.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E72AF3C21369C72006D95BF /* TenantThankYouPageX.xib */; };
+		7E72AF4021369C73006D95BF /* TenantThankYouPage5S.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E72AF3D21369C72006D95BF /* TenantThankYouPage5S.xib */; };
+		7E72AF4121369C73006D95BF /* TenantThankYouPage6Plus.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E72AF3E21369C72006D95BF /* TenantThankYouPage6Plus.xib */; };
+		7E72AF4521369C93006D95BF /* ServicestatusX.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E72AF4221369C92006D95BF /* ServicestatusX.xib */; };
+		7E72AF4B21369CA9006D95BF /* JobDetail6Plus.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E72AF4821369CA8006D95BF /* JobDetail6Plus.xib */; };
+		7E72AF5821369CDB006D95BF /* ComplainListX.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E72AF5521369CDA006D95BF /* ComplainListX.xib */; };
+		7E72AF5D21369CEA006D95BF /* AddComplainX.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E72AF5A21369CE9006D95BF /* AddComplainX.xib */; };
+		7E72AF5E21369CEA006D95BF /* AddComplain5S.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E72AF5B21369CEA006D95BF /* AddComplain5S.xib */; };
+		7E72AF5F21369CEA006D95BF /* AddComplain6Plus.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E72AF5C21369CEA006D95BF /* AddComplain6Plus.xib */; };
+		7E72AF6321369CFA006D95BF /* ComplaindetailsX.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E72AF6021369CF9006D95BF /* ComplaindetailsX.xib */; };
+		7E72AF6421369CFA006D95BF /* Complaindetails5S.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E72AF6121369CF9006D95BF /* Complaindetails5S.xib */; };
+		7E72AF6521369CFA006D95BF /* Complaindetails6Plus.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E72AF6221369CFA006D95BF /* Complaindetails6Plus.xib */; };
+		7E72AF6A21369D3F006D95BF /* CSDashboardX.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E72AF6721369D3E006D95BF /* CSDashboardX.xib */; };
+		7E72AF7021369DC4006D95BF /* CSTasklistX.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E72AF6D21369DC4006D95BF /* CSTasklistX.xib */; };
+		7E72AF7621369DD4006D95BF /* CSTaskdetails6Plus.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E72AF7321369DD3006D95BF /* CSTaskdetails6Plus.xib */; };
+		7E7DC60C20F3671B00D8E678 /* FreelancerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7DC60B20F3671B00D8E678 /* FreelancerCell.swift */; };
+		7E8D73152165FC4D000D9A6F /* DeactivatedNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8D73132165FC4D000D9A6F /* DeactivatedNote.swift */; };
+		7E8D73162165FC4D000D9A6F /* DeactivatedNote.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E8D73142165FC4D000D9A6F /* DeactivatedNote.xib */; };
+		7E9F79CE213E599500B75329 /* AddComplain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9F79CD213E599500B75329 /* AddComplain.swift */; };
+		7E9F79D0213E59A300B75329 /* ComplainList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9F79CF213E59A300B75329 /* ComplainList.swift */; };
+		7E9F79D2213E59B100B75329 /* Complaindetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9F79D1213E59B100B75329 /* Complaindetails.swift */; };
+		7EA648EB20F338A3006660C5 /* TenantThankYouPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA648E920F338A3006660C5 /* TenantThankYouPage.swift */; };
+		7EA648EC20F338A3006660C5 /* TenantThankYouPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EA648EA20F338A3006660C5 /* TenantThankYouPage.xib */; };
+		7EC0607121F0682D00E70A2A /* Rolling9.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EC0605321F0681900E70A2A /* Rolling9.png */; };
+		7EC0607221F0682D00E70A2A /* Rolling15.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EC0605421F0681B00E70A2A /* Rolling15.png */; };
+		7EC0607321F0682D00E70A2A /* Rolling26.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EC0605521F0681C00E70A2A /* Rolling26.png */; };
+		7EC0607421F0682D00E70A2A /* Rolling29.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EC0605621F0681D00E70A2A /* Rolling29.png */; };
+		7EC0607521F0682D00E70A2A /* Rolling27.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EC0605721F0681E00E70A2A /* Rolling27.png */; };
+		7EC0607621F0682D00E70A2A /* Rolling13.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EC0605821F0681E00E70A2A /* Rolling13.png */; };
+		7EC0607721F0682D00E70A2A /* Rolling1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EC0605921F0681F00E70A2A /* Rolling1.png */; };
+		7EC0607821F0682D00E70A2A /* Rolling7.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EC0605A21F0681F00E70A2A /* Rolling7.png */; };
+		7EC0607921F0682D00E70A2A /* Rolling11.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EC0605B21F0682000E70A2A /* Rolling11.png */; };
+		7EC0607A21F0682D00E70A2A /* Rolling25.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EC0605C21F0682100E70A2A /* Rolling25.png */; };
+		7EC0607B21F0682D00E70A2A /* Rolling10.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EC0605D21F0682200E70A2A /* Rolling10.png */; };
+		7EC0607C21F0682D00E70A2A /* Rolling14.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EC0605E21F0682300E70A2A /* Rolling14.png */; };
+		7EC0607D21F0682D00E70A2A /* Rolling16.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EC0605F21F0682300E70A2A /* Rolling16.png */; };
+		7EC0607E21F0682D00E70A2A /* Rolling4.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EC0606021F0682400E70A2A /* Rolling4.png */; };
+		7EC0607F21F0682D00E70A2A /* Rolling5.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EC0606121F0682400E70A2A /* Rolling5.png */; };
+		7EC0608021F0682D00E70A2A /* Rolling3.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EC0606221F0682500E70A2A /* Rolling3.png */; };
+		7EC0608121F0682D00E70A2A /* Rolling30.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EC0606321F0682600E70A2A /* Rolling30.png */; };
+		7EC0608221F0682D00E70A2A /* Rolling24.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EC0606421F0682600E70A2A /* Rolling24.png */; };
+		7EC0608321F0682D00E70A2A /* Rolling17.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EC0606521F0682700E70A2A /* Rolling17.png */; };
+		7EC0608421F0682D00E70A2A /* Rolling2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EC0606621F0682700E70A2A /* Rolling2.png */; };
+		7EC0608521F0682D00E70A2A /* Rolling23.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EC0606721F0682800E70A2A /* Rolling23.png */; };
+		7EC0608621F0682D00E70A2A /* Rolling19.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EC0606821F0682900E70A2A /* Rolling19.png */; };
+		7EC0608721F0682D00E70A2A /* Rolling18.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EC0606921F0682900E70A2A /* Rolling18.png */; };
+		7EC0608821F0682D00E70A2A /* Rolling28.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EC0606A21F0682A00E70A2A /* Rolling28.png */; };
+		7EC0608921F0682D00E70A2A /* Rolling20.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EC0606B21F0682A00E70A2A /* Rolling20.png */; };
+		7EC0608A21F0682D00E70A2A /* Rolling8.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EC0606C21F0682B00E70A2A /* Rolling8.png */; };
+		7EC0608B21F0682D00E70A2A /* Rolling21.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EC0606D21F0682B00E70A2A /* Rolling21.png */; };
+		7EC0608C21F0682D00E70A2A /* Rolling22.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EC0606E21F0682C00E70A2A /* Rolling22.png */; };
+		7EC0608D21F0682D00E70A2A /* Rolling6.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EC0606F21F0682D00E70A2A /* Rolling6.png */; };
+		7EC0608E21F0682D00E70A2A /* Rolling12.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EC0607021F0682D00E70A2A /* Rolling12.png */; };
+		7ECF82B321DE45DC00ED6C67 /* CSTaskdetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECF82B221DE45DC00ED6C67 /* CSTaskdetails.swift */; };
+		7ED88DEE20F63032006C88AD /* Slidemenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED88DEC20F63032006C88AD /* Slidemenu.swift */; };
+		7ED88DEF20F63032006C88AD /* Slidemenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7ED88DED20F63032006C88AD /* Slidemenu.xib */; };
+		880A7A9122155106004905D8 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 880A7A9022155106004905D8 /* UserNotifications.framework */; };
+		880D3FF721E4BB45005A884D /* MessageListX.xib in Resources */ = {isa = PBXBuildFile; fileRef = 880D3FF621E4BB44005A884D /* MessageListX.xib */; };
+		881CBD092164E06A000B47A1 /* TenantDashboard4S.xib in Resources */ = {isa = PBXBuildFile; fileRef = 881CBD082164E06A000B47A1 /* TenantDashboard4S.xib */; };
+		88300B1D21A6D9F900E0DEF3 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88300B1C21A6D9F900E0DEF3 /* Common.swift */; };
+		8836ECA421BF92E000876CBA /* MyAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8836EC9D21BF92CD00876CBA /* MyAccount.swift */; };
+		8836ECA521BF92E000876CBA /* MyAccountXSMAX.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8836EC9E21BF92D700876CBA /* MyAccountXSMAX.xib */; };
+		8836ECA621BF92E000876CBA /* MyAccount6Plus.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8836EC9F21BF92DC00876CBA /* MyAccount6Plus.xib */; };
+		8836ECA721BF92E000876CBA /* MyAccount.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8836ECA021BF92DD00876CBA /* MyAccount.xib */; };
+		8836ECA821BF92E000876CBA /* MyAccountX.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8836ECA121BF92DE00876CBA /* MyAccountX.xib */; };
+		8836ECA921BF92E000876CBA /* MyAccount5S.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8836ECA221BF92DF00876CBA /* MyAccount5S.xib */; };
+		8836ECAA21BF92E000876CBA /* MyAccount4S.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8836ECA321BF92E000876CBA /* MyAccount4S.xib */; };
+		8838042921DF3FBD00EC12F0 /* ForecChangePasswordX.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8838042821DF3FBD00EC12F0 /* ForecChangePasswordX.xib */; };
+		8838F79D21CA53FA00714800 /* AboutUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8838F79B21CA53FA00714800 /* AboutUs.swift */; };
+		8838F79E21CA53FA00714800 /* AboutUs.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8838F79C21CA53FA00714800 /* AboutUs.xib */; };
+		8838F7A021CA638400714800 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8838F79F21CA638400714800 /* Photos.framework */; };
+		8838F7A421CA756F00714800 /* MessageList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8838F7A221CA756F00714800 /* MessageList.swift */; };
+		8838F7A521CA756F00714800 /* MessageList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8838F7A321CA756F00714800 /* MessageList.xib */; };
+		8838F7A921CA761F00714800 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8838F7A721CA761F00714800 /* MessageCell.swift */; };
+		8838F7AA21CA761F00714800 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8838F7A821CA761F00714800 /* MessageCell.xib */; };
+		885132CB21CD1032004799E0 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885132CA21CD1032004799E0 /* AssetsLibrary.framework */; };
+		88522B7821C7851D007DCC8E /* ForecChangePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88522B7621C7851D007DCC8E /* ForecChangePassword.swift */; };
+		88522B7921C7851D007DCC8E /* ForecChangePassword.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88522B7721C7851D007DCC8E /* ForecChangePassword.xib */; };
+		8852440122006E7A00463DCF /* AboutUsX.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8852440022006E7A00463DCF /* AboutUsX.xib */; };
+		885C02D12158C1CD00414676 /* ServiceNoteHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885C02CF2158C1CD00414676 /* ServiceNoteHistory.swift */; };
+		885C02D22158C1CD00414676 /* ServiceNoteHistory.xib in Resources */ = {isa = PBXBuildFile; fileRef = 885C02D02158C1CD00414676 /* ServiceNoteHistory.xib */; };
+		8866A1A521AE67DF0006FE01 /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8866A1A321AE67DF0006FE01 /* NoteCell.swift */; };
+		8866A1A621AE67DF0006FE01 /* NoteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8866A1A421AE67DF0006FE01 /* NoteCell.xib */; };
+		8875E93A21D39E700001389C /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8875E93921D39E6F0001389C /* EventKit.framework */; };
+		8883E9DA21679508001C6BD4 /* Complaindetails4S.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8883E9D921679508001C6BD4 /* Complaindetails4S.xib */; };
+		8883E9DC2167976A001C6BD4 /* Tenantjobcreate4S.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8883E9DB2167976A001C6BD4 /* Tenantjobcreate4S.xib */; };
+		8883E9E021679BE4001C6BD4 /* AddComplain4S.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8883E9DF21679BE4001C6BD4 /* AddComplain4S.xib */; };
+		8886866321BF93E900FDB8F2 /* CSMyAccount6Plus.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8886865C21BF93E600FDB8F2 /* CSMyAccount6Plus.xib */; };
+		8886866421BF93E900FDB8F2 /* CSMyAccountX.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8886865D21BF93E600FDB8F2 /* CSMyAccountX.xib */; };
+		8886866521BF93E900FDB8F2 /* CSMyAccount5S.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8886865E21BF93E700FDB8F2 /* CSMyAccount5S.xib */; };
+		8886866621BF93E900FDB8F2 /* CSMyAccount4S.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8886865F21BF93E700FDB8F2 /* CSMyAccount4S.xib */; };
+		8886866721BF93E900FDB8F2 /* CSMyAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8886866021BF93E800FDB8F2 /* CSMyAccount.swift */; };
+		8886866821BF93E900FDB8F2 /* CSMyAccountXSMAX.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8886866121BF93E900FDB8F2 /* CSMyAccountXSMAX.xib */; };
+		8886866921BF93E900FDB8F2 /* CSMyAccount.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8886866221BF93E900FDB8F2 /* CSMyAccount.xib */; };
+		8892076121DCCC54007DBEA6 /* CSTaskdetails5S.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8892075D21DCCC4D007DBEA6 /* CSTaskdetails5S.xib */; };
+		8892076221DCCC54007DBEA6 /* CSTaskdetailsXSMAX.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8892075E21DCCC4F007DBEA6 /* CSTaskdetailsXSMAX.xib */; };
+		8892076321DCCC54007DBEA6 /* CSTaskdetailsX.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8892075F21DCCC51007DBEA6 /* CSTaskdetailsX.xib */; };
+		8892076421DCCC54007DBEA6 /* CSTaskdetails4S.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8892076021DCCC54007DBEA6 /* CSTaskdetails4S.xib */; };
+		8892076921DCCC8B007DBEA6 /* JobDetailX.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8892076521DCCC89007DBEA6 /* JobDetailX.xib */; };
+		8892076A21DCCC8B007DBEA6 /* JobDetail5S.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8892076621DCCC89007DBEA6 /* JobDetail5S.xib */; };
+		8892076B21DCCC8B007DBEA6 /* JobDetail4S.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8892076721DCCC8A007DBEA6 /* JobDetail4S.xib */; };
+		8892076C21DCCC8B007DBEA6 /* JobDetailXSMAX.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8892076821DCCC8B007DBEA6 /* JobDetailXSMAX.xib */; };
+		88A50A192147C73800F5F07C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A50A182147C73800F5F07C /* Foundation.framework */; };
+		88C5E25A21F6FA680015C412 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 88C5E25921F6FA680015C412 /* GoogleService-Info.plist */; };
+		88DA8D68216B2845002540A5 /* ServiceNoteHistoryX.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88DA8D67216B2845002540A5 /* ServiceNoteHistoryX.xib */; };
+		88DA8D6E216B2CFA002540A5 /* DeactivatedNote6Plus.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88DA8D6D216B2CFA002540A5 /* DeactivatedNote6Plus.xib */; };
+		88DA8D70216B2D0D002540A5 /* DeactivatedNoteX.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88DA8D6F216B2D0D002540A5 /* DeactivatedNoteX.xib */; };
+		88DA8D72216B2D1E002540A5 /* DeactivatedNote5S.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88DA8D71216B2D1E002540A5 /* DeactivatedNote5S.xib */; };
+		88DA8D74216B2D2C002540A5 /* DeactivatedNote4S.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88DA8D73216B2D2C002540A5 /* DeactivatedNote4S.xib */; };
+		88DA8D7C216B3824002540A5 /* DeactivatedNoteXSMAX.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88DA8D7B216B3824002540A5 /* DeactivatedNoteXSMAX.xib */; };
+		88DA8D8A216B3FD8002540A5 /* TenantDashboardXSMAX.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88DA8D89216B3FD8002540A5 /* TenantDashboardXSMAX.xib */; };
+		88DA8D8E216B4207002540A5 /* TenantjobcreateXSMAX.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88DA8D8D216B4207002540A5 /* TenantjobcreateXSMAX.xib */; };
+		88DA8D96216B4F60002540A5 /* AddComplainXSMAX.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88DA8D95216B4F60002540A5 /* AddComplainXSMAX.xib */; };
+		88DA8D9A216B519C002540A5 /* ComplaindetailsXSMAX.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88DA8D99216B519C002540A5 /* ComplaindetailsXSMAX.xib */; };
+		88EC64D82211ACF600F7A98F /* no_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 88EC64D72211ACF500F7A98F /* no_image.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A7C9C1AA54F638C17F3EF3D /* Pods_AlMutlaqRealEstate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlMutlaqRealEstate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E09379220FDF4D9000FDBB1 /* Servicestatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Servicestatus.swift; sourceTree = "<group>"; };
+		7E09379320FDF4D9000FDBB1 /* Servicestatus.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Servicestatus.xib; sourceTree = "<group>"; };
+		7E127EA321DA3E7F00205B24 /* FSCalendarExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarExtensions.m; sourceTree = "<group>"; };
+		7E127EA421DA3E8100205B24 /* FSCalendarSeparatorDecorationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarSeparatorDecorationView.h; sourceTree = "<group>"; };
+		7E127EA521DA3E8100205B24 /* FSCalendarDynamicHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarDynamicHeader.h; sourceTree = "<group>"; };
+		7E127EA621DA3E8300205B24 /* FSCalendarConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarConstants.h; sourceTree = "<group>"; };
+		7E127EA721DA3E8300205B24 /* FSCalendarHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarHeaderView.h; sourceTree = "<group>"; };
+		7E127EA821DA3E8600205B24 /* FSCalendarDelegationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarDelegationFactory.h; sourceTree = "<group>"; };
+		7E127EA921DA3E8A00205B24 /* FSCalendarWeekdayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarWeekdayView.m; sourceTree = "<group>"; };
+		7E127EAA21DA3E8B00205B24 /* FSCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendar.m; sourceTree = "<group>"; };
+		7E127EAB21DA3E8C00205B24 /* FSCalendarTransitionCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarTransitionCoordinator.h; sourceTree = "<group>"; };
+		7E127EAC21DA3E8D00205B24 /* FSCalendarCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCalculator.m; sourceTree = "<group>"; };
+		7E127EAD21DA3E8E00205B24 /* FSCalendarDelegationProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarDelegationProxy.m; sourceTree = "<group>"; };
+		7E127EAE21DA3E8F00205B24 /* FSCalendarAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarAppearance.m; sourceTree = "<group>"; };
+		7E127EAF21DA3E9000205B24 /* FSCalendarAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarAppearance.h; sourceTree = "<group>"; };
+		7E127EB021DA3E9100205B24 /* FSCalendarConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarConstants.m; sourceTree = "<group>"; };
+		7E127EB121DA3E9200205B24 /* FSCalendarCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCollectionView.h; sourceTree = "<group>"; };
+		7E127EB221DA3E9300205B24 /* FSCalendarDelegationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarDelegationFactory.m; sourceTree = "<group>"; };
+		7E127EB321DA3E9400205B24 /* FSCalendarCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCollectionView.m; sourceTree = "<group>"; };
+		7E127EB421DA3E9400205B24 /* FSCalendarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCell.m; sourceTree = "<group>"; };
+		7E127EB521DA3E9500205B24 /* FSCalendarSeparatorDecorationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarSeparatorDecorationView.m; sourceTree = "<group>"; };
+		7E127EB621DA3E9600205B24 /* FSCalendarStickyHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarStickyHeader.m; sourceTree = "<group>"; };
+		7E127EB721DA3E9700205B24 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E127EB821DA3E9700205B24 /* FSCalendarDelegationProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarDelegationProxy.h; sourceTree = "<group>"; };
+		7E127EB921DA3E9800205B24 /* FSCalendarExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarExtensions.h; sourceTree = "<group>"; };
+		7E127EBA21DA3E9900205B24 /* FSCalendarTransitionCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarTransitionCoordinator.m; sourceTree = "<group>"; };
+		7E127EBB21DA3E9900205B24 /* FSCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendar.h; sourceTree = "<group>"; };
+		7E127EBC21DA3E9A00205B24 /* FSCalendarHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarHeaderView.m; sourceTree = "<group>"; };
+		7E127EBD21DA3E9B00205B24 /* FSCalendarWeekdayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarWeekdayView.h; sourceTree = "<group>"; };
+		7E127EBE21DA3E9B00205B24 /* FSCalendarCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCollectionViewLayout.h; sourceTree = "<group>"; };
+		7E127EBF21DA3E9C00205B24 /* FSCalendarStickyHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarStickyHeader.h; sourceTree = "<group>"; };
+		7E127EC021DA3E9C00205B24 /* FSCalendarCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCalculator.h; sourceTree = "<group>"; };
+		7E127EC121DA3E9D00205B24 /* FSCalendarCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCollectionViewLayout.m; sourceTree = "<group>"; };
+		7E127EC221DA3E9E00205B24 /* FSCalendarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCell.h; sourceTree = "<group>"; };
+		7E127ED321DA3FC700205B24 /* CSDashboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSDashboard.swift; sourceTree = "<group>"; };
+		7E13B86822099E2B00F7915C /* Default-812h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-812h@3x.png"; sourceTree = "<group>"; };
+		7E13B86922099E2C00F7915C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		7E13B86A22099E2D00F7915C /* Default-812h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-812h@2x.png"; sourceTree = "<group>"; };
+		7E13B86B22099E2E00F7915C /* Default-802h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-802h.png"; sourceTree = "<group>"; };
+		7E13B86C22099E2E00F7915C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		7E13B86D22099E2F00F7915C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		7E13B86E22099E3000F7915C /* Default-667h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h.png"; sourceTree = "<group>"; };
+		7E13B86F22099E3000F7915C /* Default-736h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h.png"; sourceTree = "<group>"; };
+		7E13B87822099EAC00F7915C /* serviceimagebg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = serviceimagebg.png; sourceTree = "<group>"; };
+		7E13B87922099EAD00F7915C /* mutlaqoffice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mutlaqoffice.png; sourceTree = "<group>"; };
+		7E31645720EBA0A400DE158D /* icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-60@2x.png"; sourceTree = "<group>"; };
+		7E31645820EBA0A400DE158D /* icon-1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-1024.png"; sourceTree = "<group>"; };
+		7E31645920EBA0A400DE158D /* icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-40.png"; sourceTree = "<group>"; };
+		7E31645A20EBA0A400DE158D /* icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-40@2x.png"; sourceTree = "<group>"; };
+		7E31645B20EBA0A400DE158D /* icon-29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-29@3x.png"; sourceTree = "<group>"; };
+		7E31645C20EBA0A400DE158D /* icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-29.png"; sourceTree = "<group>"; };
+		7E31645D20EBA0A400DE158D /* icon-40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-40@3x.png"; sourceTree = "<group>"; };
+		7E31645E20EBA0A500DE158D /* icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-60.png"; sourceTree = "<group>"; };
+		7E31645F20EBA0A500DE158D /* icon-20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-20@2x.png"; sourceTree = "<group>"; };
+		7E31646020EBA0A500DE158D /* icon-20@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-20@3x.png"; sourceTree = "<group>"; };
+		7E31646120EBA0A500DE158D /* icon-29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-29@2x.png"; sourceTree = "<group>"; };
+		7E31646220EBA0A500DE158D /* icon-20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-20.png"; sourceTree = "<group>"; };
+		7E31646320EBA0A500DE158D /* icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-60@3x.png"; sourceTree = "<group>"; };
+		7E32466C20EE18D800B1C0FB /* AlMutlaqRealEstate-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AlMutlaqRealEstate-Bridging-Header.h"; sourceTree = "<group>"; };
+		7E32466D20EE18D800B1C0FB /* BridgeObjectiveC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BridgeObjectiveC.m; sourceTree = "<group>"; };
+		7E32466F20EE193200B1C0FB /* BridgeObjectiveC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeObjectiveC.h; sourceTree = "<group>"; };
 		7E3B358120EB86BB00690236 /* AlMutlaqRealEstate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlMutlaqRealEstate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E3B358420EB86BB00690236 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E3B358620EB86BB00690236 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +286,166 @@
 		7E3B358E20EB86BB00690236 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E3B359120EB86BB00690236 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E3B359320EB86BB00690236 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E3B359920EB86F200690236 /* login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = login.swift; sourceTree = "<group>"; };
+		7E3B359A20EB86F200690236 /* login.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = login.xib; sourceTree = "<group>"; };
+		7E3B35A120EB873300690236 /* TenantDashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenantDashboard.swift; sourceTree = "<group>"; };
+		7E3B35A220EB873300690236 /* TenantDashboard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TenantDashboard.xib; sourceTree = "<group>"; };
+		7E3B35A920EB878800690236 /* Tenantjobcreate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tenantjobcreate.swift; sourceTree = "<group>"; };
+		7E3B35AD20EB87C800690236 /* JobDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetail.swift; sourceTree = "<group>"; };
+		7E3B35AE20EB87C800690236 /* JobDetail.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobDetail.xib; sourceTree = "<group>"; };
+		7E3B35C120EB8E4B00690236 /* JobTypeMaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTypeMaster.swift; sourceTree = "<group>"; };
+		7E3B35C220EB8E4B00690236 /* JobTypeMaster.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobTypeMaster.xib; sourceTree = "<group>"; };
+		7E3B35CA20EB8FDE00690236 /* AllImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AllImages.xcassets; sourceTree = "<group>"; };
+		7E3B35CD20EB901300690236 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7E3B35CF20EB901900690236 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7E40708321B5571600467DCB /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		7E40708421B5572600467DCB /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		7E40708521B5572800467DCB /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		7E40708621B5572A00467DCB /* RobotoCondensed-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Light.ttf"; sourceTree = "<group>"; };
+		7E40708721B5572B00467DCB /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		7E40708821B5572C00467DCB /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		7E40708921B5572D00467DCB /* RobotoCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Regular.ttf"; sourceTree = "<group>"; };
+		7E40708A21B5572E00467DCB /* RobotoCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Bold.ttf"; sourceTree = "<group>"; };
+		7E40708B21B5572E00467DCB /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		7E5A303620FF059F002542C5 /* Tutorials.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Tutorials.xib; sourceTree = "<group>"; };
+		7E5A303820FF08BC002542C5 /* Tutorials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tutorials.swift; sourceTree = "<group>"; };
+		7E5A304420FF62CC002542C5 /* AddComplain.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddComplain.xib; sourceTree = "<group>"; };
+		7E5A304920FF6465002542C5 /* ComplainList.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComplainList.xib; sourceTree = "<group>"; };
+		7E5A304E20FF6491002542C5 /* Complaindetails.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Complaindetails.xib; sourceTree = "<group>"; };
+		7E5A305320FF789C002542C5 /* CSDashboard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CSDashboard.xib; sourceTree = "<group>"; };
+		7E5A305720FF7A37002542C5 /* CSTasklist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSTasklist.swift; sourceTree = "<group>"; };
+		7E5A305820FF7A37002542C5 /* CSTasklist.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CSTasklist.xib; sourceTree = "<group>"; };
+		7E5A305D20FF7B21002542C5 /* CSTaskdetails.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CSTaskdetails.xib; sourceTree = "<group>"; };
+		7E65B68021DC8E6E00514477 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		7E72AF16213696E1006D95BF /* loginX.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = loginX.xib; sourceTree = "<group>"; };
+		7E72AF1C213696FA006D95BF /* SlidemenuX.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SlidemenuX.xib; sourceTree = "<group>"; };
+		7E72AF2221369742006D95BF /* TenantDashboard5S.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TenantDashboard5S.xib; sourceTree = "<group>"; };
+		7E72AF2321369742006D95BF /* TenantDashboardX.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TenantDashboardX.xib; sourceTree = "<group>"; };
+		7E72AF2421369742006D95BF /* TenantDashboard6Plus.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TenantDashboard6Plus.xib; sourceTree = "<group>"; };
+		7E72AF2A21369786006D95BF /* JobTypeMasterX.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobTypeMasterX.xib; sourceTree = "<group>"; };
+		7E72AF3421369C4F006D95BF /* Tenantjobcreate.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Tenantjobcreate.xib; sourceTree = "<group>"; };
+		7E72AF3621369C5E006D95BF /* Tenantjobcreate5S.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Tenantjobcreate5S.xib; sourceTree = "<group>"; };
+		7E72AF3721369C5F006D95BF /* TenantjobcreateX.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TenantjobcreateX.xib; sourceTree = "<group>"; };
+		7E72AF3821369C5F006D95BF /* Tenantjobcreate6Plus.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Tenantjobcreate6Plus.xib; sourceTree = "<group>"; };
+		7E72AF3C21369C72006D95BF /* TenantThankYouPageX.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TenantThankYouPageX.xib; sourceTree = "<group>"; };
+		7E72AF3D21369C72006D95BF /* TenantThankYouPage5S.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TenantThankYouPage5S.xib; sourceTree = "<group>"; };
+		7E72AF3E21369C72006D95BF /* TenantThankYouPage6Plus.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TenantThankYouPage6Plus.xib; sourceTree = "<group>"; };
+		7E72AF4221369C92006D95BF /* ServicestatusX.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServicestatusX.xib; sourceTree = "<group>"; };
+		7E72AF4821369CA8006D95BF /* JobDetail6Plus.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobDetail6Plus.xib; sourceTree = "<group>"; };
+		7E72AF5521369CDA006D95BF /* ComplainListX.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComplainListX.xib; sourceTree = "<group>"; };
+		7E72AF5A21369CE9006D95BF /* AddComplainX.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddComplainX.xib; sourceTree = "<group>"; };
+		7E72AF5B21369CEA006D95BF /* AddComplain5S.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddComplain5S.xib; sourceTree = "<group>"; };
+		7E72AF5C21369CEA006D95BF /* AddComplain6Plus.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddComplain6Plus.xib; sourceTree = "<group>"; };
+		7E72AF6021369CF9006D95BF /* ComplaindetailsX.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComplaindetailsX.xib; sourceTree = "<group>"; };
+		7E72AF6121369CF9006D95BF /* Complaindetails5S.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Complaindetails5S.xib; sourceTree = "<group>"; };
+		7E72AF6221369CFA006D95BF /* Complaindetails6Plus.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Complaindetails6Plus.xib; sourceTree = "<group>"; };
+		7E72AF6721369D3E006D95BF /* CSDashboardX.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSDashboardX.xib; sourceTree = "<group>"; };
+		7E72AF6D21369DC4006D95BF /* CSTasklistX.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSTasklistX.xib; sourceTree = "<group>"; };
+		7E72AF7321369DD3006D95BF /* CSTaskdetails6Plus.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSTaskdetails6Plus.xib; sourceTree = "<group>"; };
+		7E7DC60B20F3671B00D8E678 /* FreelancerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreelancerCell.swift; sourceTree = "<group>"; };
+		7E8D73132165FC4D000D9A6F /* DeactivatedNote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeactivatedNote.swift; sourceTree = "<group>"; };
+		7E8D73142165FC4D000D9A6F /* DeactivatedNote.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeactivatedNote.xib; sourceTree = "<group>"; };
+		7E9F79CD213E599500B75329 /* AddComplain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddComplain.swift; sourceTree = "<group>"; };
+		7E9F79CF213E59A300B75329 /* ComplainList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplainList.swift; sourceTree = "<group>"; };
+		7E9F79D1213E59B100B75329 /* Complaindetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Complaindetails.swift; sourceTree = "<group>"; };
+		7EA648E920F338A3006660C5 /* TenantThankYouPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenantThankYouPage.swift; sourceTree = "<group>"; };
+		7EA648EA20F338A3006660C5 /* TenantThankYouPage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TenantThankYouPage.xib; sourceTree = "<group>"; };
+		7EC0605321F0681900E70A2A /* Rolling9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rolling9.png; sourceTree = "<group>"; };
+		7EC0605421F0681B00E70A2A /* Rolling15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rolling15.png; sourceTree = "<group>"; };
+		7EC0605521F0681C00E70A2A /* Rolling26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rolling26.png; sourceTree = "<group>"; };
+		7EC0605621F0681D00E70A2A /* Rolling29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rolling29.png; sourceTree = "<group>"; };
+		7EC0605721F0681E00E70A2A /* Rolling27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rolling27.png; sourceTree = "<group>"; };
+		7EC0605821F0681E00E70A2A /* Rolling13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rolling13.png; sourceTree = "<group>"; };
+		7EC0605921F0681F00E70A2A /* Rolling1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rolling1.png; sourceTree = "<group>"; };
+		7EC0605A21F0681F00E70A2A /* Rolling7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rolling7.png; sourceTree = "<group>"; };
+		7EC0605B21F0682000E70A2A /* Rolling11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rolling11.png; sourceTree = "<group>"; };
+		7EC0605C21F0682100E70A2A /* Rolling25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rolling25.png; sourceTree = "<group>"; };
+		7EC0605D21F0682200E70A2A /* Rolling10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rolling10.png; sourceTree = "<group>"; };
+		7EC0605E21F0682300E70A2A /* Rolling14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rolling14.png; sourceTree = "<group>"; };
+		7EC0605F21F0682300E70A2A /* Rolling16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rolling16.png; sourceTree = "<group>"; };
+		7EC0606021F0682400E70A2A /* Rolling4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rolling4.png; sourceTree = "<group>"; };
+		7EC0606121F0682400E70A2A /* Rolling5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rolling5.png; sourceTree = "<group>"; };
+		7EC0606221F0682500E70A2A /* Rolling3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rolling3.png; sourceTree = "<group>"; };
+		7EC0606321F0682600E70A2A /* Rolling30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rolling30.png; sourceTree = "<group>"; };
+		7EC0606421F0682600E70A2A /* Rolling24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rolling24.png; sourceTree = "<group>"; };
+		7EC0606521F0682700E70A2A /* Rolling17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rolling17.png; sourceTree = "<group>"; };
+		7EC0606621F0682700E70A2A /* Rolling2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rolling2.png; sourceTree = "<group>"; };
+		7EC0606721F0682800E70A2A /* Rolling23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rolling23.png; sourceTree = "<group>"; };
+		7EC0606821F0682900E70A2A /* Rolling19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rolling19.png; sourceTree = "<group>"; };
+		7EC0606921F0682900E70A2A /* Rolling18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rolling18.png; sourceTree = "<group>"; };
+		7EC0606A21F0682A00E70A2A /* Rolling28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rolling28.png; sourceTree = "<group>"; };
+		7EC0606B21F0682A00E70A2A /* Rolling20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rolling20.png; sourceTree = "<group>"; };
+		7EC0606C21F0682B00E70A2A /* Rolling8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rolling8.png; sourceTree = "<group>"; };
+		7EC0606D21F0682B00E70A2A /* Rolling21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rolling21.png; sourceTree = "<group>"; };
+		7EC0606E21F0682C00E70A2A /* Rolling22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rolling22.png; sourceTree = "<group>"; };
+		7EC0606F21F0682D00E70A2A /* Rolling6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rolling6.png; sourceTree = "<group>"; };
+		7EC0607021F0682D00E70A2A /* Rolling12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rolling12.png; sourceTree = "<group>"; };
+		7ECF82B221DE45DC00ED6C67 /* CSTaskdetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSTaskdetails.swift; sourceTree = "<group>"; };
+		7ED88DEC20F63032006C88AD /* Slidemenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slidemenu.swift; sourceTree = "<group>"; };
+		7ED88DED20F63032006C88AD /* Slidemenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slidemenu.xib; sourceTree = "<group>"; };
+		880A7A9022155106004905D8 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		880D3FF621E4BB44005A884D /* MessageListX.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageListX.xib; sourceTree = "<group>"; };
+		881CBD082164E06A000B47A1 /* TenantDashboard4S.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TenantDashboard4S.xib; sourceTree = "<group>"; };
+		88300B1C21A6D9F900E0DEF3 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		8836EC9D21BF92CD00876CBA /* MyAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAccount.swift; sourceTree = "<group>"; };
+		8836EC9E21BF92D700876CBA /* MyAccountXSMAX.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyAccountXSMAX.xib; sourceTree = "<group>"; };
+		8836EC9F21BF92DC00876CBA /* MyAccount6Plus.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyAccount6Plus.xib; sourceTree = "<group>"; };
+		8836ECA021BF92DD00876CBA /* MyAccount.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyAccount.xib; sourceTree = "<group>"; };
+		8836ECA121BF92DE00876CBA /* MyAccountX.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyAccountX.xib; sourceTree = "<group>"; };
+		8836ECA221BF92DF00876CBA /* MyAccount5S.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyAccount5S.xib; sourceTree = "<group>"; };
+		8836ECA321BF92E000876CBA /* MyAccount4S.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyAccount4S.xib; sourceTree = "<group>"; };
+		8838042821DF3FBD00EC12F0 /* ForecChangePasswordX.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForecChangePasswordX.xib; sourceTree = "<group>"; };
+		8838F79B21CA53FA00714800 /* AboutUs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUs.swift; sourceTree = "<group>"; };
+		8838F79C21CA53FA00714800 /* AboutUs.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutUs.xib; sourceTree = "<group>"; };
+		8838F79F21CA638400714800 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		8838F7A221CA756F00714800 /* MessageList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageList.swift; sourceTree = "<group>"; };
+		8838F7A321CA756F00714800 /* MessageList.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageList.xib; sourceTree = "<group>"; };
+		8838F7A721CA761F00714800 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		8838F7A821CA761F00714800 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
+		885132CA21CD1032004799E0 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		88522B7621C7851D007DCC8E /* ForecChangePassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecChangePassword.swift; sourceTree = "<group>"; };
+		88522B7721C7851D007DCC8E /* ForecChangePassword.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForecChangePassword.xib; sourceTree = "<group>"; };
+		8852440022006E7A00463DCF /* AboutUsX.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutUsX.xib; sourceTree = "<group>"; };
+		885C02CF2158C1CD00414676 /* ServiceNoteHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceNoteHistory.swift; sourceTree = "<group>"; };
+		885C02D02158C1CD00414676 /* ServiceNoteHistory.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceNoteHistory.xib; sourceTree = "<group>"; };
+		8866A1A321AE67DF0006FE01 /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
+		8866A1A421AE67DF0006FE01 /* NoteCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoteCell.xib; sourceTree = "<group>"; };
+		8875E93921D39E6F0001389C /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		8883E9D921679508001C6BD4 /* Complaindetails4S.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Complaindetails4S.xib; sourceTree = "<group>"; };
+		8883E9DB2167976A001C6BD4 /* Tenantjobcreate4S.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Tenantjobcreate4S.xib; sourceTree = "<group>"; };
+		8883E9DF21679BE4001C6BD4 /* AddComplain4S.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddComplain4S.xib; sourceTree = "<group>"; };
+		8886865C21BF93E600FDB8F2 /* CSMyAccount6Plus.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSMyAccount6Plus.xib; sourceTree = "<group>"; };
+		8886865D21BF93E600FDB8F2 /* CSMyAccountX.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSMyAccountX.xib; sourceTree = "<group>"; };
+		8886865E21BF93E700FDB8F2 /* CSMyAccount5S.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSMyAccount5S.xib; sourceTree = "<group>"; };
+		8886865F21BF93E700FDB8F2 /* CSMyAccount4S.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSMyAccount4S.xib; sourceTree = "<group>"; };
+		8886866021BF93E800FDB8F2 /* CSMyAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSMyAccount.swift; sourceTree = "<group>"; };
+		8886866121BF93E900FDB8F2 /* CSMyAccountXSMAX.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSMyAccountXSMAX.xib; sourceTree = "<group>"; };
+		8886866221BF93E900FDB8F2 /* CSMyAccount.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSMyAccount.xib; sourceTree = "<group>"; };
+		8892075D21DCCC4D007DBEA6 /* CSTaskdetails5S.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSTaskdetails5S.xib; sourceTree = "<group>"; };
+		8892075E21DCCC4F007DBEA6 /* CSTaskdetailsXSMAX.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSTaskdetailsXSMAX.xib; sourceTree = "<group>"; };
+		8892075F21DCCC51007DBEA6 /* CSTaskdetailsX.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSTaskdetailsX.xib; sourceTree = "<group>"; };
+		8892076021DCCC54007DBEA6 /* CSTaskdetails4S.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSTaskdetails4S.xib; sourceTree = "<group>"; };
+		8892076521DCCC89007DBEA6 /* JobDetailX.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobDetailX.xib; sourceTree = "<group>"; };
+		8892076621DCCC89007DBEA6 /* JobDetail5S.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobDetail5S.xib; sourceTree = "<group>"; };
+		8892076721DCCC8A007DBEA6 /* JobDetail4S.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobDetail4S.xib; sourceTree = "<group>"; };
+		8892076821DCCC8B007DBEA6 /* JobDetailXSMAX.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobDetailXSMAX.xib; sourceTree = "<group>"; };
+		88A50A182147C73800F5F07C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		88C5E25921F6FA680015C412 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		88C5E25B21F6FD2C0015C412 /* AlMutlaqRealEstate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AlMutlaqRealEstate.entitlements; sourceTree = "<group>"; };
+		88DA8D67216B2845002540A5 /* ServiceNoteHistoryX.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceNoteHistoryX.xib; sourceTree = "<group>"; };
+		88DA8D6D216B2CFA002540A5 /* DeactivatedNote6Plus.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeactivatedNote6Plus.xib; sourceTree = "<group>"; };
+		88DA8D6F216B2D0D002540A5 /* DeactivatedNoteX.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeactivatedNoteX.xib; sourceTree = "<group>"; };
+		88DA8D71216B2D1E002540A5 /* DeactivatedNote5S.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeactivatedNote5S.xib; sourceTree = "<group>"; };
+		88DA8D73216B2D2C002540A5 /* DeactivatedNote4S.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeactivatedNote4S.xib; sourceTree = "<group>"; };
+		88DA8D7B216B3824002540A5 /* DeactivatedNoteXSMAX.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeactivatedNoteXSMAX.xib; sourceTree = "<group>"; };
+		88DA8D89216B3FD8002540A5 /* TenantDashboardXSMAX.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TenantDashboardXSMAX.xib; sourceTree = "<group>"; };
+		88DA8D8D216B4207002540A5 /* TenantjobcreateXSMAX.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TenantjobcreateXSMAX.xib; sourceTree = "<group>"; };
+		88DA8D95216B4F60002540A5 /* AddComplainXSMAX.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddComplainXSMAX.xib; sourceTree = "<group>"; };
+		88DA8D99216B519C002540A5 /* ComplaindetailsXSMAX.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComplaindetailsXSMAX.xib; sourceTree = "<group>"; };
+		88EC64D72211ACF500F7A98F /* no_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = no_image.png; sourceTree = "<group>"; };
+		C80F098E835D6430625C15E0 /* Pods-AlMutlaqRealEstate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlMutlaqRealEstate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlMutlaqRealEstate/Pods-AlMutlaqRealEstate.debug.xcconfig"; sourceTree = "<group>"; };
+		D0571524331BEBFD64E127C5 /* Pods-AlMutlaqRealEstate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlMutlaqRealEstate.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlMutlaqRealEstate/Pods-AlMutlaqRealEstate.release.xcconfig"; sourceTree = "<group>"; };
+		FCFA97C86940C45893485CE9 /* Pods-AlMutlaqRealEstate.distribution.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlMutlaqRealEstate.distribution.xcconfig"; path = "Pods/Target Support Files/Pods-AlMutlaqRealEstate/Pods-AlMutlaqRealEstate.distribution.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +453,126 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				880A7A9122155106004905D8 /* UserNotifications.framework in Frameworks */,
+				7E65B68121DC8E6E00514477 /* WebKit.framework in Frameworks */,
+				8875E93A21D39E700001389C /* EventKit.framework in Frameworks */,
+				885132CB21CD1032004799E0 /* AssetsLibrary.framework in Frameworks */,
+				8838F7A021CA638400714800 /* Photos.framework in Frameworks */,
+				88A50A192147C73800F5F07C /* Foundation.framework in Frameworks */,
+				7E3B35D020EB901A00690236 /* CoreGraphics.framework in Frameworks */,
+				7E3B35CE20EB901300690236 /* QuartzCore.framework in Frameworks */,
+				3D99F3164D4CE5D2D1D292C1 /* Pods_AlMutlaqRealEstate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3563D577D684A61B82A8E1B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C80F098E835D6430625C15E0 /* Pods-AlMutlaqRealEstate.debug.xcconfig */,
+				FCFA97C86940C45893485CE9 /* Pods-AlMutlaqRealEstate.distribution.xcconfig */,
+				D0571524331BEBFD64E127C5 /* Pods-AlMutlaqRealEstate.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7E09379120FDF4B8000FDBB1 /* ServiceStatus */ = {
+			isa = PBXGroup;
+			children = (
+				7E09379220FDF4D9000FDBB1 /* Servicestatus.swift */,
+				7E09379320FDF4D9000FDBB1 /* Servicestatus.xib */,
+				7E72AF4221369C92006D95BF /* ServicestatusX.xib */,
+			);
+			path = ServiceStatus;
+			sourceTree = "<group>";
+		};
+		7E09379620FE06C2000FDBB1 /* TENANT */ = {
+			isa = PBXGroup;
+			children = (
+				7E5A304C20FF6472002542C5 /* Complaindetails */,
+				7E5A304720FF6393002542C5 /* ComplainList */,
+				7E5A304220FF62B6002542C5 /* AddComplain */,
+				7E3B35BA20EB899C00690236 /* JobDetail */,
+				7E09379120FDF4B8000FDBB1 /* ServiceStatus */,
+				7ED1D1DF20F7423E00BB74AE /* MyAccount */,
+				7E3B35B920EB899A00690236 /* JobAdd */,
+				7E3B35BC20EB89A000690236 /* ServiceType */,
+				7E3B35B720EB899700690236 /* Dashboard */,
+			);
+			path = TENANT;
+			sourceTree = "<group>";
+		};
+		7E127EA221DA3E4A00205B24 /* FSCCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				7E127EBB21DA3E9900205B24 /* FSCalendar.h */,
+				7E127EAA21DA3E8B00205B24 /* FSCalendar.m */,
+				7E127EAF21DA3E9000205B24 /* FSCalendarAppearance.h */,
+				7E127EAE21DA3E8F00205B24 /* FSCalendarAppearance.m */,
+				7E127EC021DA3E9C00205B24 /* FSCalendarCalculator.h */,
+				7E127EAC21DA3E8D00205B24 /* FSCalendarCalculator.m */,
+				7E127EC221DA3E9E00205B24 /* FSCalendarCell.h */,
+				7E127EB421DA3E9400205B24 /* FSCalendarCell.m */,
+				7E127EB121DA3E9200205B24 /* FSCalendarCollectionView.h */,
+				7E127EB321DA3E9400205B24 /* FSCalendarCollectionView.m */,
+				7E127EBE21DA3E9B00205B24 /* FSCalendarCollectionViewLayout.h */,
+				7E127EC121DA3E9D00205B24 /* FSCalendarCollectionViewLayout.m */,
+				7E127EA621DA3E8300205B24 /* FSCalendarConstants.h */,
+				7E127EB021DA3E9100205B24 /* FSCalendarConstants.m */,
+				7E127EA821DA3E8600205B24 /* FSCalendarDelegationFactory.h */,
+				7E127EB221DA3E9300205B24 /* FSCalendarDelegationFactory.m */,
+				7E127EB821DA3E9700205B24 /* FSCalendarDelegationProxy.h */,
+				7E127EAD21DA3E8E00205B24 /* FSCalendarDelegationProxy.m */,
+				7E127EA521DA3E8100205B24 /* FSCalendarDynamicHeader.h */,
+				7E127EB921DA3E9800205B24 /* FSCalendarExtensions.h */,
+				7E127EA321DA3E7F00205B24 /* FSCalendarExtensions.m */,
+				7E127EA721DA3E8300205B24 /* FSCalendarHeaderView.h */,
+				7E127EBC21DA3E9A00205B24 /* FSCalendarHeaderView.m */,
+				7E127EA421DA3E8100205B24 /* FSCalendarSeparatorDecorationView.h */,
+				7E127EB521DA3E9500205B24 /* FSCalendarSeparatorDecorationView.m */,
+				7E127EBF21DA3E9C00205B24 /* FSCalendarStickyHeader.h */,
+				7E127EB621DA3E9600205B24 /* FSCalendarStickyHeader.m */,
+				7E127EAB21DA3E8C00205B24 /* FSCalendarTransitionCoordinator.h */,
+				7E127EBA21DA3E9900205B24 /* FSCalendarTransitionCoordinator.m */,
+				7E127EBD21DA3E9B00205B24 /* FSCalendarWeekdayView.h */,
+				7E127EA921DA3E8A00205B24 /* FSCalendarWeekdayView.m */,
+				7E127EB721DA3E9700205B24 /* Info.plist */,
+			);
+			name = FSCCalendar;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		7E2850AA20F8EE65004FC4C3 /* Textfont */ = {
+			isa = PBXGroup;
+			children = (
+				7E40708B21B5572E00467DCB /* Roboto-Black.ttf */,
+				7E40708821B5572C00467DCB /* Roboto-Bold.ttf */,
+				7E40708421B5572600467DCB /* Roboto-Light.ttf */,
+				7E40708321B5571600467DCB /* Roboto-Medium.ttf */,
+				7E40708721B5572B00467DCB /* Roboto-Regular.ttf */,
+				7E40708521B5572800467DCB /* Roboto-Thin.ttf */,
+				7E40708A21B5572E00467DCB /* RobotoCondensed-Bold.ttf */,
+				7E40708621B5572A00467DCB /* RobotoCondensed-Light.ttf */,
+				7E40708921B5572D00467DCB /* RobotoCondensed-Regular.ttf */,
+			);
+			path = Textfont;
+			sourceTree = "<group>";
+		};
 		7E3B357820EB86BB00690236 = {
 			isa = PBXGroup;
 			children = (
+				88C5E25921F6FA680015C412 /* GoogleService-Info.plist */,
+				7E8D73102165FBAF000D9A6F /* CUTSOM-CLASS */,
+				7E3B35CA20EB8FDE00690236 /* AllImages.xcassets */,
+				7E3B35C620EB8ECB00690236 /* IMAGE-RESOURCE */,
+				7E8D73112165FBDC000D9A6F /* CODE-CLASS */,
 				7E3B358320EB86BB00690236 /* AlMutlaqRealEstate */,
 				7E3B358220EB86BB00690236 /* Products */,
+				7E3B35CC20EB901300690236 /* Frameworks */,
+				7E32466C20EE18D800B1C0FB /* AlMutlaqRealEstate-Bridging-Header.h */,
+				3563D577D684A61B82A8E1B2 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,7 +587,7 @@
 		7E3B358320EB86BB00690236 /* AlMutlaqRealEstate */ = {
 			isa = PBXGroup;
 			children = (
-				7E3B358420EB86BB00690236 /* AppDelegate.swift */,
+				88C5E25B21F6FD2C0015C412 /* AlMutlaqRealEstate.entitlements */,
 				7E3B358620EB86BB00690236 /* ViewController.swift */,
 				7E3B358820EB86BB00690236 /* Main.storyboard */,
 				7E3B358E20EB86BB00690236 /* Assets.xcassets */,
@@ -67,6 +598,450 @@
 			path = AlMutlaqRealEstate;
 			sourceTree = "<group>";
 		};
+		7E3B35B520EB898A00690236 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				7E3B359920EB86F200690236 /* login.swift */,
+				7E3B359A20EB86F200690236 /* login.xib */,
+				7E72AF16213696E1006D95BF /* loginX.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		7E3B35B720EB899700690236 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				7E3B35A120EB873300690236 /* TenantDashboard.swift */,
+				7E3B35A220EB873300690236 /* TenantDashboard.xib */,
+				7E72AF2421369742006D95BF /* TenantDashboard6Plus.xib */,
+				7E72AF2221369742006D95BF /* TenantDashboard5S.xib */,
+				881CBD082164E06A000B47A1 /* TenantDashboard4S.xib */,
+				7E72AF2321369742006D95BF /* TenantDashboardX.xib */,
+				88DA8D89216B3FD8002540A5 /* TenantDashboardXSMAX.xib */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		7E3B35B820EB899900690236 /* CSDashboard */ = {
+			isa = PBXGroup;
+			children = (
+				7E127ED321DA3FC700205B24 /* CSDashboard.swift */,
+				7E5A305320FF789C002542C5 /* CSDashboard.xib */,
+				7E72AF6721369D3E006D95BF /* CSDashboardX.xib */,
+			);
+			path = CSDashboard;
+			sourceTree = "<group>";
+		};
+		7E3B35B920EB899A00690236 /* JobAdd */ = {
+			isa = PBXGroup;
+			children = (
+				7E3B35A920EB878800690236 /* Tenantjobcreate.swift */,
+				7E72AF3421369C4F006D95BF /* Tenantjobcreate.xib */,
+				7E72AF3821369C5F006D95BF /* Tenantjobcreate6Plus.xib */,
+				7E72AF3621369C5E006D95BF /* Tenantjobcreate5S.xib */,
+				8883E9DB2167976A001C6BD4 /* Tenantjobcreate4S.xib */,
+				7E72AF3721369C5F006D95BF /* TenantjobcreateX.xib */,
+				88DA8D8D216B4207002540A5 /* TenantjobcreateXSMAX.xib */,
+			);
+			path = JobAdd;
+			sourceTree = "<group>";
+		};
+		7E3B35BA20EB899C00690236 /* JobDetail */ = {
+			isa = PBXGroup;
+			children = (
+				7E3B35AD20EB87C800690236 /* JobDetail.swift */,
+				7E3B35AE20EB87C800690236 /* JobDetail.xib */,
+				7E72AF4821369CA8006D95BF /* JobDetail6Plus.xib */,
+				8892076721DCCC8A007DBEA6 /* JobDetail4S.xib */,
+				8892076621DCCC89007DBEA6 /* JobDetail5S.xib */,
+				8892076521DCCC89007DBEA6 /* JobDetailX.xib */,
+				8892076821DCCC8B007DBEA6 /* JobDetailXSMAX.xib */,
+			);
+			path = JobDetail;
+			sourceTree = "<group>";
+		};
+		7E3B35BC20EB89A000690236 /* ServiceType */ = {
+			isa = PBXGroup;
+			children = (
+				7E3B35C120EB8E4B00690236 /* JobTypeMaster.swift */,
+				7E3B35C220EB8E4B00690236 /* JobTypeMaster.xib */,
+				7E72AF2A21369786006D95BF /* JobTypeMasterX.xib */,
+			);
+			path = ServiceType;
+			sourceTree = "<group>";
+		};
+		7E3B35C520EB8E5900690236 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				7E3B358420EB86BB00690236 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		7E3B35C620EB8ECB00690236 /* IMAGE-RESOURCE */ = {
+			isa = PBXGroup;
+			children = (
+				88EC64D72211ACF500F7A98F /* no_image.png */,
+				7E57192B213975A50056C6AC /* AppLoader */,
+				7E9F108121142ED000081F50 /* splash */,
+				7E3B35C920EB8F5000690236 /* appicon */,
+				7EA9FD9D2108601A0069767B /* extra */,
+			);
+			path = "IMAGE-RESOURCE";
+			sourceTree = "<group>";
+		};
+		7E3B35C920EB8F5000690236 /* appicon */ = {
+			isa = PBXGroup;
+			children = (
+				7E31646220EBA0A500DE158D /* icon-20.png */,
+				7E31645F20EBA0A500DE158D /* icon-20@2x.png */,
+				7E31646020EBA0A500DE158D /* icon-20@3x.png */,
+				7E31645C20EBA0A400DE158D /* icon-29.png */,
+				7E31646120EBA0A500DE158D /* icon-29@2x.png */,
+				7E31645B20EBA0A400DE158D /* icon-29@3x.png */,
+				7E31645920EBA0A400DE158D /* icon-40.png */,
+				7E31645A20EBA0A400DE158D /* icon-40@2x.png */,
+				7E31645D20EBA0A400DE158D /* icon-40@3x.png */,
+				7E31645E20EBA0A500DE158D /* icon-60.png */,
+				7E31645720EBA0A400DE158D /* icon-60@2x.png */,
+				7E31646320EBA0A500DE158D /* icon-60@3x.png */,
+				7E31645820EBA0A400DE158D /* icon-1024.png */,
+			);
+			path = appicon;
+			sourceTree = "<group>";
+		};
+		7E3B35CC20EB901300690236 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				880A7A9022155106004905D8 /* UserNotifications.framework */,
+				7E65B68021DC8E6E00514477 /* WebKit.framework */,
+				8875E93921D39E6F0001389C /* EventKit.framework */,
+				885132CA21CD1032004799E0 /* AssetsLibrary.framework */,
+				8838F79F21CA638400714800 /* Photos.framework */,
+				88A50A182147C73800F5F07C /* Foundation.framework */,
+				7E3B35CF20EB901900690236 /* CoreGraphics.framework */,
+				7E3B35CD20EB901300690236 /* QuartzCore.framework */,
+				0A7C9C1AA54F638C17F3EF3D /* Pods_AlMutlaqRealEstate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E57192B213975A50056C6AC /* AppLoader */ = {
+			isa = PBXGroup;
+			children = (
+				7EC0605921F0681F00E70A2A /* Rolling1.png */,
+				7EC0606621F0682700E70A2A /* Rolling2.png */,
+				7EC0606221F0682500E70A2A /* Rolling3.png */,
+				7EC0606021F0682400E70A2A /* Rolling4.png */,
+				7EC0606121F0682400E70A2A /* Rolling5.png */,
+				7EC0606F21F0682D00E70A2A /* Rolling6.png */,
+				7EC0605A21F0681F00E70A2A /* Rolling7.png */,
+				7EC0606C21F0682B00E70A2A /* Rolling8.png */,
+				7EC0605321F0681900E70A2A /* Rolling9.png */,
+				7EC0605D21F0682200E70A2A /* Rolling10.png */,
+				7EC0605B21F0682000E70A2A /* Rolling11.png */,
+				7EC0607021F0682D00E70A2A /* Rolling12.png */,
+				7EC0605821F0681E00E70A2A /* Rolling13.png */,
+				7EC0605E21F0682300E70A2A /* Rolling14.png */,
+				7EC0605421F0681B00E70A2A /* Rolling15.png */,
+				7EC0605F21F0682300E70A2A /* Rolling16.png */,
+				7EC0606521F0682700E70A2A /* Rolling17.png */,
+				7EC0606921F0682900E70A2A /* Rolling18.png */,
+				7EC0606821F0682900E70A2A /* Rolling19.png */,
+				7EC0606B21F0682A00E70A2A /* Rolling20.png */,
+				7EC0606D21F0682B00E70A2A /* Rolling21.png */,
+				7EC0606E21F0682C00E70A2A /* Rolling22.png */,
+				7EC0606721F0682800E70A2A /* Rolling23.png */,
+				7EC0606421F0682600E70A2A /* Rolling24.png */,
+				7EC0605C21F0682100E70A2A /* Rolling25.png */,
+				7EC0605521F0681C00E70A2A /* Rolling26.png */,
+				7EC0605721F0681E00E70A2A /* Rolling27.png */,
+				7EC0606A21F0682A00E70A2A /* Rolling28.png */,
+				7EC0605621F0681D00E70A2A /* Rolling29.png */,
+				7EC0606321F0682600E70A2A /* Rolling30.png */,
+			);
+			path = AppLoader;
+			sourceTree = "<group>";
+		};
+		7E5A303A20FF0E5D002542C5 /* Tutorials */ = {
+			isa = PBXGroup;
+			children = (
+				7E5A303820FF08BC002542C5 /* Tutorials.swift */,
+				7E5A303620FF059F002542C5 /* Tutorials.xib */,
+			);
+			path = Tutorials;
+			sourceTree = "<group>";
+		};
+		7E5A304220FF62B6002542C5 /* AddComplain */ = {
+			isa = PBXGroup;
+			children = (
+				7E9F79CD213E599500B75329 /* AddComplain.swift */,
+				7E5A304420FF62CC002542C5 /* AddComplain.xib */,
+				7E72AF5C21369CEA006D95BF /* AddComplain6Plus.xib */,
+				7E72AF5B21369CEA006D95BF /* AddComplain5S.xib */,
+				8883E9DF21679BE4001C6BD4 /* AddComplain4S.xib */,
+				7E72AF5A21369CE9006D95BF /* AddComplainX.xib */,
+				88DA8D95216B4F60002540A5 /* AddComplainXSMAX.xib */,
+			);
+			path = AddComplain;
+			sourceTree = "<group>";
+		};
+		7E5A304720FF6393002542C5 /* ComplainList */ = {
+			isa = PBXGroup;
+			children = (
+				7E9F79CF213E59A300B75329 /* ComplainList.swift */,
+				7E5A304920FF6465002542C5 /* ComplainList.xib */,
+				7E72AF5521369CDA006D95BF /* ComplainListX.xib */,
+			);
+			path = ComplainList;
+			sourceTree = "<group>";
+		};
+		7E5A304C20FF6472002542C5 /* Complaindetails */ = {
+			isa = PBXGroup;
+			children = (
+				7E9F79D1213E59B100B75329 /* Complaindetails.swift */,
+				7E5A304E20FF6491002542C5 /* Complaindetails.xib */,
+				7E72AF6221369CFA006D95BF /* Complaindetails6Plus.xib */,
+				7E72AF6021369CF9006D95BF /* ComplaindetailsX.xib */,
+				7E72AF6121369CF9006D95BF /* Complaindetails5S.xib */,
+				8883E9D921679508001C6BD4 /* Complaindetails4S.xib */,
+				88DA8D99216B519C002540A5 /* ComplaindetailsXSMAX.xib */,
+			);
+			path = Complaindetails;
+			sourceTree = "<group>";
+		};
+		7E5A305120FF77E6002542C5 /* CUSTOMERSERVICE */ = {
+			isa = PBXGroup;
+			children = (
+				7EC39C432100796C007FE559 /* CSMyAccount */,
+				7E5A305B20FF7B0E002542C5 /* CSTaskdetails */,
+				7E5A305620FF7A1F002542C5 /* CSTasklist */,
+				7E3B35B820EB899900690236 /* CSDashboard */,
+			);
+			name = CUSTOMERSERVICE;
+			path = CustomerService;
+			sourceTree = "<group>";
+		};
+		7E5A305620FF7A1F002542C5 /* CSTasklist */ = {
+			isa = PBXGroup;
+			children = (
+				7E5A305720FF7A37002542C5 /* CSTasklist.swift */,
+				7E5A305820FF7A37002542C5 /* CSTasklist.xib */,
+				7E72AF6D21369DC4006D95BF /* CSTasklistX.xib */,
+			);
+			path = CSTasklist;
+			sourceTree = "<group>";
+		};
+		7E5A305B20FF7B0E002542C5 /* CSTaskdetails */ = {
+			isa = PBXGroup;
+			children = (
+				7ECF82B221DE45DC00ED6C67 /* CSTaskdetails.swift */,
+				7E5A305D20FF7B21002542C5 /* CSTaskdetails.xib */,
+				7E72AF7321369DD3006D95BF /* CSTaskdetails6Plus.xib */,
+				8892076021DCCC54007DBEA6 /* CSTaskdetails4S.xib */,
+				8892075D21DCCC4D007DBEA6 /* CSTaskdetails5S.xib */,
+				8892075F21DCCC51007DBEA6 /* CSTaskdetailsX.xib */,
+				8892075E21DCCC4F007DBEA6 /* CSTaskdetailsXSMAX.xib */,
+			);
+			path = CSTaskdetails;
+			sourceTree = "<group>";
+		};
+		7E7DC60A20F366FE00D8E678 /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				7E7DC60B20F3671B00D8E678 /* FreelancerCell.swift */,
+			);
+			path = CollectionCell;
+			sourceTree = "<group>";
+		};
+		7E8D73102165FBAF000D9A6F /* CUTSOM-CLASS */ = {
+			isa = PBXGroup;
+			children = (
+				7E2850AA20F8EE65004FC4C3 /* Textfont */,
+				7E127EA221DA3E4A00205B24 /* FSCCalendar */,
+				88300B1B21A6D9D300E0DEF3 /* Constants */,
+				7E7DC60A20F366FE00D8E678 /* CollectionCell */,
+				7E32466F20EE193200B1C0FB /* BridgeObjectiveC.h */,
+				7E32466D20EE18D800B1C0FB /* BridgeObjectiveC.m */,
+			);
+			path = "CUTSOM-CLASS";
+			sourceTree = "<group>";
+		};
+		7E8D73112165FBDC000D9A6F /* CODE-CLASS */ = {
+			isa = PBXGroup;
+			children = (
+				7E5A305120FF77E6002542C5 /* CUSTOMERSERVICE */,
+				7E09379620FE06C2000FDBB1 /* TENANT */,
+				7EABA16421B50490006C91F1 /* COMMON */,
+				7E3B35C520EB8E5900690236 /* AppDelegate */,
+			);
+			path = "CODE-CLASS";
+			sourceTree = "<group>";
+		};
+		7E8D73122165FC3D000D9A6F /* DeactivatedNotes */ = {
+			isa = PBXGroup;
+			children = (
+				7E8D73132165FC4D000D9A6F /* DeactivatedNote.swift */,
+				7E8D73142165FC4D000D9A6F /* DeactivatedNote.xib */,
+				88DA8D6D216B2CFA002540A5 /* DeactivatedNote6Plus.xib */,
+				88DA8D71216B2D1E002540A5 /* DeactivatedNote5S.xib */,
+				88DA8D73216B2D2C002540A5 /* DeactivatedNote4S.xib */,
+				88DA8D6F216B2D0D002540A5 /* DeactivatedNoteX.xib */,
+				88DA8D7B216B3824002540A5 /* DeactivatedNoteXSMAX.xib */,
+			);
+			path = DeactivatedNotes;
+			sourceTree = "<group>";
+		};
+		7E9F108121142ED000081F50 /* splash */ = {
+			isa = PBXGroup;
+			children = (
+				7E13B86922099E2C00F7915C /* Default-568h@2x.png */,
+				7E13B86E22099E3000F7915C /* Default-667h.png */,
+				7E13B86F22099E3000F7915C /* Default-736h.png */,
+				7E13B86B22099E2E00F7915C /* Default-802h.png */,
+				7E13B86A22099E2D00F7915C /* Default-812h@2x.png */,
+				7E13B86822099E2B00F7915C /* Default-812h@3x.png */,
+				7E13B86C22099E2E00F7915C /* Default.png */,
+				7E13B86D22099E2F00F7915C /* Default@2x.png */,
+			);
+			path = splash;
+			sourceTree = "<group>";
+		};
+		7EA648E820F33877006660C5 /* ThankYouPage */ = {
+			isa = PBXGroup;
+			children = (
+				7EA648E920F338A3006660C5 /* TenantThankYouPage.swift */,
+				7EA648EA20F338A3006660C5 /* TenantThankYouPage.xib */,
+				7E72AF3E21369C72006D95BF /* TenantThankYouPage6Plus.xib */,
+				7E72AF3C21369C72006D95BF /* TenantThankYouPageX.xib */,
+				7E72AF3D21369C72006D95BF /* TenantThankYouPage5S.xib */,
+			);
+			path = ThankYouPage;
+			sourceTree = "<group>";
+		};
+		7EA9FD9D2108601A0069767B /* extra */ = {
+			isa = PBXGroup;
+			children = (
+				7E13B87922099EAD00F7915C /* mutlaqoffice.png */,
+				7E13B87822099EAC00F7915C /* serviceimagebg.png */,
+			);
+			path = extra;
+			sourceTree = "<group>";
+		};
+		7EABA16421B50490006C91F1 /* COMMON */ = {
+			isa = PBXGroup;
+			children = (
+				7E3B35B520EB898A00690236 /* Login */,
+				8838F7A121CA755500714800 /* MessageList */,
+				8838F79A21CA53BF00714800 /* AboutUs */,
+				88522B7521C784E9007DCC8E /* ForecChangePassword */,
+				7E5A303A20FF0E5D002542C5 /* Tutorials */,
+				7ED88DEB20F6300F006C88AD /* Slidemenu */,
+				7EA648E820F33877006660C5 /* ThankYouPage */,
+				885C02CE2158C16400414676 /* ServiceNoteHistory */,
+				7E8D73122165FC3D000D9A6F /* DeactivatedNotes */,
+			);
+			path = COMMON;
+			sourceTree = "<group>";
+		};
+		7EC39C432100796C007FE559 /* CSMyAccount */ = {
+			isa = PBXGroup;
+			children = (
+				8886866021BF93E800FDB8F2 /* CSMyAccount.swift */,
+				8886866221BF93E900FDB8F2 /* CSMyAccount.xib */,
+				8886865F21BF93E700FDB8F2 /* CSMyAccount4S.xib */,
+				8886865E21BF93E700FDB8F2 /* CSMyAccount5S.xib */,
+				8886865C21BF93E600FDB8F2 /* CSMyAccount6Plus.xib */,
+				8886865D21BF93E600FDB8F2 /* CSMyAccountX.xib */,
+				8886866121BF93E900FDB8F2 /* CSMyAccountXSMAX.xib */,
+			);
+			path = CSMyAccount;
+			sourceTree = "<group>";
+		};
+		7ED1D1DF20F7423E00BB74AE /* MyAccount */ = {
+			isa = PBXGroup;
+			children = (
+				8836EC9D21BF92CD00876CBA /* MyAccount.swift */,
+				8836ECA021BF92DD00876CBA /* MyAccount.xib */,
+				8836ECA321BF92E000876CBA /* MyAccount4S.xib */,
+				8836ECA221BF92DF00876CBA /* MyAccount5S.xib */,
+				8836EC9F21BF92DC00876CBA /* MyAccount6Plus.xib */,
+				8836ECA121BF92DE00876CBA /* MyAccountX.xib */,
+				8836EC9E21BF92D700876CBA /* MyAccountXSMAX.xib */,
+			);
+			path = MyAccount;
+			sourceTree = "<group>";
+		};
+		7ED88DEB20F6300F006C88AD /* Slidemenu */ = {
+			isa = PBXGroup;
+			children = (
+				7ED88DEC20F63032006C88AD /* Slidemenu.swift */,
+				7ED88DED20F63032006C88AD /* Slidemenu.xib */,
+				7E72AF1C213696FA006D95BF /* SlidemenuX.xib */,
+			);
+			path = Slidemenu;
+			sourceTree = "<group>";
+		};
+		88300B1B21A6D9D300E0DEF3 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				88300B1C21A6D9F900E0DEF3 /* Common.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		8838F79A21CA53BF00714800 /* AboutUs */ = {
+			isa = PBXGroup;
+			children = (
+				8838F79B21CA53FA00714800 /* AboutUs.swift */,
+				8838F79C21CA53FA00714800 /* AboutUs.xib */,
+				8852440022006E7A00463DCF /* AboutUsX.xib */,
+			);
+			path = AboutUs;
+			sourceTree = "<group>";
+		};
+		8838F7A121CA755500714800 /* MessageList */ = {
+			isa = PBXGroup;
+			children = (
+				8838F7A221CA756F00714800 /* MessageList.swift */,
+				880D3FF621E4BB44005A884D /* MessageListX.xib */,
+				8838F7A321CA756F00714800 /* MessageList.xib */,
+				8838F7A621CA760400714800 /* cell */,
+			);
+			path = MessageList;
+			sourceTree = "<group>";
+		};
+		8838F7A621CA760400714800 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				8838F7A721CA761F00714800 /* MessageCell.swift */,
+				8838F7A821CA761F00714800 /* MessageCell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		88522B7521C784E9007DCC8E /* ForecChangePassword */ = {
+			isa = PBXGroup;
+			children = (
+				88522B7621C7851D007DCC8E /* ForecChangePassword.swift */,
+				88522B7721C7851D007DCC8E /* ForecChangePassword.xib */,
+				8838042821DF3FBD00EC12F0 /* ForecChangePasswordX.xib */,
+			);
+			path = ForecChangePassword;
+			sourceTree = "<group>";
+		};
+		885C02CE2158C16400414676 /* ServiceNoteHistory */ = {
+			isa = PBXGroup;
+			children = (
+				885C02CF2158C1CD00414676 /* ServiceNoteHistory.swift */,
+				885C02D02158C1CD00414676 /* ServiceNoteHistory.xib */,
+				88DA8D67216B2845002540A5 /* ServiceNoteHistoryX.xib */,
+				8866A1A321AE67DF0006FE01 /* NoteCell.swift */,
+				8866A1A421AE67DF0006FE01 /* NoteCell.xib */,
+			);
+			path = ServiceNoteHistory;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +1049,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7E3B359620EB86BB00690236 /* Build configuration list for PBXNativeTarget "AlMutlaqRealEstate" */;
 			buildPhases = (
+				7ACF880112675917F40D0790 /* [CP] Check Pods Manifest.lock */,
 				7E3B357D20EB86BB00690236 /* Sources */,
 				7E3B357E20EB86BB00690236 /* Frameworks */,
 				7E3B357F20EB86BB00690236 /* Resources */,
+				F2B12A8A278F591DB8E17CCA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -94,12 +1071,21 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = SANDIPAN;
 				TargetAttributes = {
 					7E3B358020EB86BB00690236 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -126,22 +1112,264 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E31646D20EBA0A500DE158D /* icon-20@3x.png in Resources */,
+				7EC0608921F0682D00E70A2A /* Rolling20.png in Resources */,
+				7E5A305020FF6491002542C5 /* Complaindetails.xib in Resources */,
+				7E40709421B5572E00467DCB /* Roboto-Black.ttf in Resources */,
+				7EC0607F21F0682D00E70A2A /* Rolling5.png in Resources */,
 				7E3B359220EB86BB00690236 /* LaunchScreen.storyboard in Resources */,
+				88EC64D82211ACF600F7A98F /* no_image.png in Resources */,
+				7E8D73162165FC4D000D9A6F /* DeactivatedNote.xib in Resources */,
+				7E5A304620FF62CC002542C5 /* AddComplain.xib in Resources */,
+				7E40708C21B5572E00467DCB /* Roboto-Medium.ttf in Resources */,
+				7E13B87B22099EAD00F7915C /* mutlaqoffice.png in Resources */,
+				8838F7A521CA756F00714800 /* MessageList.xib in Resources */,
+				7E13B87222099E3100F7915C /* Default-812h@2x.png in Resources */,
+				7E31646F20EBA0A500DE158D /* icon-20.png in Resources */,
+				7E72AF7621369DD4006D95BF /* CSTaskdetails6Plus.xib in Resources */,
+				7EC0608121F0682D00E70A2A /* Rolling30.png in Resources */,
+				7E72AF2521369743006D95BF /* TenantDashboard5S.xib in Resources */,
+				7E13B87722099E3100F7915C /* Default-736h.png in Resources */,
+				7E72AF3B21369C5F006D95BF /* Tenantjobcreate6Plus.xib in Resources */,
+				7EC0608521F0682D00E70A2A /* Rolling23.png in Resources */,
+				7E72AF3F21369C73006D95BF /* TenantThankYouPageX.xib in Resources */,
+				7EC0608E21F0682D00E70A2A /* Rolling12.png in Resources */,
+				7EA648EC20F338A3006660C5 /* TenantThankYouPage.xib in Resources */,
+				8892076421DCCC54007DBEA6 /* CSTaskdetails4S.xib in Resources */,
+				88DA8D6E216B2CFA002540A5 /* DeactivatedNote6Plus.xib in Resources */,
+				7EC0608221F0682D00E70A2A /* Rolling24.png in Resources */,
+				7EC0608821F0682D00E70A2A /* Rolling28.png in Resources */,
+				7E72AF19213696E2006D95BF /* loginX.xib in Resources */,
+				7E5A305520FF789C002542C5 /* CSDashboard.xib in Resources */,
+				7E40708F21B5572E00467DCB /* RobotoCondensed-Light.ttf in Resources */,
+				7EC0608721F0682D00E70A2A /* Rolling18.png in Resources */,
+				8836ECA921BF92E000876CBA /* MyAccount5S.xib in Resources */,
+				7E72AF4B21369CA9006D95BF /* JobDetail6Plus.xib in Resources */,
+				7E72AF2721369743006D95BF /* TenantDashboard6Plus.xib in Resources */,
+				7EC0608D21F0682D00E70A2A /* Rolling6.png in Resources */,
+				7EC0608421F0682D00E70A2A /* Rolling2.png in Resources */,
+				7EC0607D21F0682D00E70A2A /* Rolling16.png in Resources */,
+				7E72AF5E21369CEA006D95BF /* AddComplain5S.xib in Resources */,
+				7E3B35C420EB8E4B00690236 /* JobTypeMaster.xib in Resources */,
 				7E3B358F20EB86BB00690236 /* Assets.xcassets in Resources */,
+				7E72AF6321369CFA006D95BF /* ComplaindetailsX.xib in Resources */,
+				7E13B87022099E3100F7915C /* Default-812h@3x.png in Resources */,
+				88DA8D7C216B3824002540A5 /* DeactivatedNoteXSMAX.xib in Resources */,
+				7E72AF2D21369786006D95BF /* JobTypeMasterX.xib in Resources */,
+				7EC0608A21F0682D00E70A2A /* Rolling8.png in Resources */,
+				881CBD092164E06A000B47A1 /* TenantDashboard4S.xib in Resources */,
+				7E5A303720FF059F002542C5 /* Tutorials.xib in Resources */,
+				7EC0608C21F0682D00E70A2A /* Rolling22.png in Resources */,
 				7E3B358A20EB86BB00690236 /* Main.storyboard in Resources */,
+				7EC0607A21F0682D00E70A2A /* Rolling25.png in Resources */,
+				88DA8D70216B2D0D002540A5 /* DeactivatedNoteX.xib in Resources */,
+				8892076321DCCC54007DBEA6 /* CSTaskdetailsX.xib in Resources */,
+				7E40709221B5572E00467DCB /* RobotoCondensed-Regular.ttf in Resources */,
+				7E40708E21B5572E00467DCB /* Roboto-Thin.ttf in Resources */,
+				8852440122006E7A00463DCF /* AboutUsX.xib in Resources */,
+				7E40708D21B5572E00467DCB /* Roboto-Light.ttf in Resources */,
+				8892076A21DCCC8B007DBEA6 /* JobDetail5S.xib in Resources */,
+				7E72AF5D21369CEA006D95BF /* AddComplainX.xib in Resources */,
+				8883E9DC2167976A001C6BD4 /* Tenantjobcreate4S.xib in Resources */,
+				8836ECAA21BF92E000876CBA /* MyAccount4S.xib in Resources */,
+				88DA8D8E216B4207002540A5 /* TenantjobcreateXSMAX.xib in Resources */,
+				8892076921DCCC8B007DBEA6 /* JobDetailX.xib in Resources */,
+				8886866521BF93E900FDB8F2 /* CSMyAccount5S.xib in Resources */,
+				7E72AF3521369C50006D95BF /* Tenantjobcreate.xib in Resources */,
+				7E31646C20EBA0A500DE158D /* icon-20@2x.png in Resources */,
+				7E3B35B020EB87C800690236 /* JobDetail.xib in Resources */,
+				8892076221DCCC54007DBEA6 /* CSTaskdetailsXSMAX.xib in Resources */,
+				7E72AF4521369C93006D95BF /* ServicestatusX.xib in Resources */,
+				7E13B87622099E3100F7915C /* Default-667h.png in Resources */,
+				885C02D22158C1CD00414676 /* ServiceNoteHistory.xib in Resources */,
+				7E5A304B20FF6465002542C5 /* ComplainList.xib in Resources */,
+				7EC0608021F0682D00E70A2A /* Rolling3.png in Resources */,
+				7E31646E20EBA0A500DE158D /* icon-29@2x.png in Resources */,
+				7E72AF6A21369D3F006D95BF /* CSDashboardX.xib in Resources */,
+				7E40709121B5572E00467DCB /* Roboto-Bold.ttf in Resources */,
+				7E127ECF21DA3E9E00205B24 /* Info.plist in Resources */,
+				88DA8D74216B2D2C002540A5 /* DeactivatedNote4S.xib in Resources */,
+				7E3B35CB20EB8FDE00690236 /* AllImages.xcassets in Resources */,
+				88522B7921C7851D007DCC8E /* ForecChangePassword.xib in Resources */,
+				7ED88DEF20F63032006C88AD /* Slidemenu.xib in Resources */,
+				7E3B35A420EB873300690236 /* TenantDashboard.xib in Resources */,
+				7EC0607421F0682D00E70A2A /* Rolling29.png in Resources */,
+				88DA8D68216B2845002540A5 /* ServiceNoteHistoryX.xib in Resources */,
+				8886866621BF93E900FDB8F2 /* CSMyAccount4S.xib in Resources */,
+				8838042921DF3FBD00EC12F0 /* ForecChangePasswordX.xib in Resources */,
+				8838F79E21CA53FA00714800 /* AboutUs.xib in Resources */,
+				8886866421BF93E900FDB8F2 /* CSMyAccountX.xib in Resources */,
+				7E40709321B5572E00467DCB /* RobotoCondensed-Bold.ttf in Resources */,
+				7E72AF6421369CFA006D95BF /* Complaindetails5S.xib in Resources */,
+				8883E9DA21679508001C6BD4 /* Complaindetails4S.xib in Resources */,
+				7E72AF4021369C73006D95BF /* TenantThankYouPage5S.xib in Resources */,
+				880D3FF721E4BB45005A884D /* MessageListX.xib in Resources */,
+				7EC0607121F0682D00E70A2A /* Rolling9.png in Resources */,
+				8836ECA621BF92E000876CBA /* MyAccount6Plus.xib in Resources */,
+				7E72AF4121369C73006D95BF /* TenantThankYouPage6Plus.xib in Resources */,
+				88C5E25A21F6FA680015C412 /* GoogleService-Info.plist in Resources */,
+				7E13B87122099E3100F7915C /* Default-568h@2x.png in Resources */,
+				7E31646720EBA0A500DE158D /* icon-40@2x.png in Resources */,
+				7E31646B20EBA0A500DE158D /* icon-60.png in Resources */,
+				7E31646520EBA0A500DE158D /* icon-1024.png in Resources */,
+				7E31646A20EBA0A500DE158D /* icon-40@3x.png in Resources */,
+				7EC0607521F0682D00E70A2A /* Rolling27.png in Resources */,
+				7E72AF7021369DC4006D95BF /* CSTasklistX.xib in Resources */,
+				7E5A305F20FF7B22002542C5 /* CSTaskdetails.xib in Resources */,
+				7EC0607821F0682D00E70A2A /* Rolling7.png in Resources */,
+				8836ECA521BF92E000876CBA /* MyAccountXSMAX.xib in Resources */,
+				88DA8D8A216B3FD8002540A5 /* TenantDashboardXSMAX.xib in Resources */,
+				7EC0608B21F0682D00E70A2A /* Rolling21.png in Resources */,
+				7E3B359C20EB86F200690236 /* login.xib in Resources */,
+				8836ECA821BF92E000876CBA /* MyAccountX.xib in Resources */,
+				7E72AF1F213696FA006D95BF /* SlidemenuX.xib in Resources */,
+				7E31646420EBA0A500DE158D /* icon-60@2x.png in Resources */,
+				7E72AF5821369CDB006D95BF /* ComplainListX.xib in Resources */,
+				8892076C21DCCC8B007DBEA6 /* JobDetailXSMAX.xib in Resources */,
+				7E31646620EBA0A500DE158D /* icon-40.png in Resources */,
+				7E40709021B5572E00467DCB /* Roboto-Regular.ttf in Resources */,
+				7EC0607C21F0682D00E70A2A /* Rolling14.png in Resources */,
+				7E13B87422099E3100F7915C /* Default.png in Resources */,
+				7E13B87A22099EAD00F7915C /* serviceimagebg.png in Resources */,
+				7E09379520FDF4D9000FDBB1 /* Servicestatus.xib in Resources */,
+				7EC0607721F0682D00E70A2A /* Rolling1.png in Resources */,
+				7E72AF2621369743006D95BF /* TenantDashboardX.xib in Resources */,
+				7E31647020EBA0A500DE158D /* icon-60@3x.png in Resources */,
+				7EC0607321F0682D00E70A2A /* Rolling26.png in Resources */,
+				88DA8D96216B4F60002540A5 /* AddComplainXSMAX.xib in Resources */,
+				7EC0607B21F0682D00E70A2A /* Rolling10.png in Resources */,
+				8836ECA721BF92E000876CBA /* MyAccount.xib in Resources */,
+				7EC0607921F0682D00E70A2A /* Rolling11.png in Resources */,
+				7E13B87322099E3100F7915C /* Default-802h.png in Resources */,
+				8838F7AA21CA761F00714800 /* MessageCell.xib in Resources */,
+				7E72AF3A21369C5F006D95BF /* TenantjobcreateX.xib in Resources */,
+				8886866921BF93E900FDB8F2 /* CSMyAccount.xib in Resources */,
+				7EC0608621F0682D00E70A2A /* Rolling19.png in Resources */,
+				7E5A305A20FF7A37002542C5 /* CSTasklist.xib in Resources */,
+				7EC0607621F0682D00E70A2A /* Rolling13.png in Resources */,
+				88DA8D72216B2D1E002540A5 /* DeactivatedNote5S.xib in Resources */,
+				88DA8D9A216B519C002540A5 /* ComplaindetailsXSMAX.xib in Resources */,
+				7E31646820EBA0A500DE158D /* icon-29@3x.png in Resources */,
+				8866A1A621AE67DF0006FE01 /* NoteCell.xib in Resources */,
+				8883E9E021679BE4001C6BD4 /* AddComplain4S.xib in Resources */,
+				8886866821BF93E900FDB8F2 /* CSMyAccountXSMAX.xib in Resources */,
+				7E72AF5F21369CEA006D95BF /* AddComplain6Plus.xib in Resources */,
+				7EC0607E21F0682D00E70A2A /* Rolling4.png in Resources */,
+				7E72AF6521369CFA006D95BF /* Complaindetails6Plus.xib in Resources */,
+				8886866321BF93E900FDB8F2 /* CSMyAccount6Plus.xib in Resources */,
+				7E31646920EBA0A500DE158D /* icon-29.png in Resources */,
+				7E72AF3921369C5F006D95BF /* Tenantjobcreate5S.xib in Resources */,
+				8892076B21DCCC8B007DBEA6 /* JobDetail4S.xib in Resources */,
+				8892076121DCCC54007DBEA6 /* CSTaskdetails5S.xib in Resources */,
+				7E13B87522099E3100F7915C /* Default@2x.png in Resources */,
+				7EC0608321F0682D00E70A2A /* Rolling17.png in Resources */,
+				7EC0607221F0682D00E70A2A /* Rolling15.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7ACF880112675917F40D0790 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlMutlaqRealEstate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2B12A8A278F591DB8E17CCA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AlMutlaqRealEstate/Pods-AlMutlaqRealEstate-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlMutlaqRealEstate/Pods-AlMutlaqRealEstate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7E3B357D20EB86BB00690236 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E127EC721DA3E9E00205B24 /* FSCalendarDelegationProxy.m in Sources */,
+				7E127ED021DA3E9E00205B24 /* FSCalendarTransitionCoordinator.m in Sources */,
+				7E127ED221DA3E9E00205B24 /* FSCalendarCollectionViewLayout.m in Sources */,
+				7E127ECD21DA3E9E00205B24 /* FSCalendarSeparatorDecorationView.m in Sources */,
+				7E127EC521DA3E9E00205B24 /* FSCalendar.m in Sources */,
+				8838F79D21CA53FA00714800 /* AboutUs.swift in Sources */,
+				7E127ECA21DA3E9E00205B24 /* FSCalendarDelegationFactory.m in Sources */,
+				8838F7A421CA756F00714800 /* MessageList.swift in Sources */,
+				8886866721BF93E900FDB8F2 /* CSMyAccount.swift in Sources */,
+				7ED88DEE20F63032006C88AD /* Slidemenu.swift in Sources */,
+				7E127ED421DA3FC800205B24 /* CSDashboard.swift in Sources */,
+				8836ECA421BF92E000876CBA /* MyAccount.swift in Sources */,
 				7E3B358720EB86BB00690236 /* ViewController.swift in Sources */,
+				7E7DC60C20F3671B00D8E678 /* FreelancerCell.swift in Sources */,
+				7E3B35C320EB8E4B00690236 /* JobTypeMaster.swift in Sources */,
+				7E127EC821DA3E9E00205B24 /* FSCalendarAppearance.m in Sources */,
+				7E127ECC21DA3E9E00205B24 /* FSCalendarCell.m in Sources */,
+				7E127EC421DA3E9E00205B24 /* FSCalendarWeekdayView.m in Sources */,
+				88522B7821C7851D007DCC8E /* ForecChangePassword.swift in Sources */,
+				7E127ECB21DA3E9E00205B24 /* FSCalendarCollectionView.m in Sources */,
+				7E8D73152165FC4D000D9A6F /* DeactivatedNote.swift in Sources */,
+				7E127EC321DA3E9E00205B24 /* FSCalendarExtensions.m in Sources */,
+				7E3B35AB20EB878800690236 /* Tenantjobcreate.swift in Sources */,
+				7EA648EB20F338A3006660C5 /* TenantThankYouPage.swift in Sources */,
+				885C02D12158C1CD00414676 /* ServiceNoteHistory.swift in Sources */,
+				7E9F79D0213E59A300B75329 /* ComplainList.swift in Sources */,
 				7E3B358D20EB86BB00690236 /* AlMutlaqRealEstate.xcdatamodeld in Sources */,
+				7E127EC621DA3E9E00205B24 /* FSCalendarCalculator.m in Sources */,
+				8838F7A921CA761F00714800 /* MessageCell.swift in Sources */,
+				7E127ECE21DA3E9E00205B24 /* FSCalendarStickyHeader.m in Sources */,
+				88300B1D21A6D9F900E0DEF3 /* Common.swift in Sources */,
 				7E3B358520EB86BB00690236 /* AppDelegate.swift in Sources */,
+				7ECF82B321DE45DC00ED6C67 /* CSTaskdetails.swift in Sources */,
+				7E5A305920FF7A37002542C5 /* CSTasklist.swift in Sources */,
+				7E5A303920FF08BC002542C5 /* Tutorials.swift in Sources */,
+				7E9F79CE213E599500B75329 /* AddComplain.swift in Sources */,
+				7E32466E20EE18D800B1C0FB /* BridgeObjectiveC.m in Sources */,
+				7E3B35A320EB873300690236 /* TenantDashboard.swift in Sources */,
+				7E127EC921DA3E9E00205B24 /* FSCalendarConstants.m in Sources */,
+				8866A1A521AE67DF0006FE01 /* NoteCell.swift in Sources */,
+				7E3B359B20EB86F200690236 /* login.swift in Sources */,
+				7E127ED121DA3E9E00205B24 /* FSCalendarHeaderView.m in Sources */,
+				7E3B35AF20EB87C800690236 /* JobDetail.swift in Sources */,
+				7E9F79D2213E59B100B75329 /* Complaindetails.swift in Sources */,
+				7E09379420FDF4D9000FDBB1 /* Servicestatus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +1409,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -188,6 +1417,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -196,9 +1426,11 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Citytech Software Pvt Ltd (4V4WQ2YLX8)";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 4V4WQ2YLX8;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -215,9 +1447,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.citytech.MutlaqServiceApp;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -238,6 +1471,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -245,6 +1479,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -253,9 +1488,11 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Citytech Software Pvt Ltd (4V4WQ2YLX8)";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 4V4WQ2YLX8;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -266,8 +1503,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.citytech.MutlaqServiceApp;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
@@ -276,33 +1515,139 @@
 		};
 		7E3B359720EB86BB00690236 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C80F098E835D6430625C15E0 /* Pods-AlMutlaqRealEstate.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = AlMutlaqRealEstate/AlMutlaqRealEstate.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Citytech Software Pvt Ltd (4V4WQ2YLX8)";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 4V4WQ2YLX8;
 				INFOPLIST_FILE = AlMutlaqRealEstate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.-.AlMutlaqRealEstate";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.citytech.MutlaqServiceApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = MutlaqServiceApp20;
+				SWIFT_OBJC_BRIDGING_HEADER = "AlMutlaqRealEstate-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		7E3B359820EB86BB00690236 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0571524331BEBFD64E127C5 /* Pods-AlMutlaqRealEstate.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = AlMutlaqRealEstate/AlMutlaqRealEstate.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Citytech Software Pvt Ltd (4V4WQ2YLX8)";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 4V4WQ2YLX8;
 				INFOPLIST_FILE = AlMutlaqRealEstate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.-.AlMutlaqRealEstate";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.citytech.MutlaqServiceApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = MutlaqServiceApp20;
+				SWIFT_OBJC_BRIDGING_HEADER = "AlMutlaqRealEstate-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
+		};
+		886255D621C12A0800453DEA /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Citytech Software Pvt Ltd (4V4WQ2YLX8)";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 4V4WQ2YLX8;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.citytech.MutlaqServiceApp;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Distribution;
+		};
+		886255D721C12A0800453DEA /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCFA97C86940C45893485CE9 /* Pods-AlMutlaqRealEstate.distribution.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = AlMutlaqRealEstate/AlMutlaqRealEstate.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Citytech Software Pvt Ltd (4V4WQ2YLX8)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 4V4WQ2YLX8;
+				INFOPLIST_FILE = AlMutlaqRealEstate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.citytech.MutlaqServiceApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = MutlaqServiceApp20;
+				SWIFT_OBJC_BRIDGING_HEADER = "AlMutlaqRealEstate-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Distribution;
 		};
 /* End XCBuildConfiguration section */
 
@@ -311,19 +1656,21 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7E3B359420EB86BB00690236 /* Debug */,
+				886255D621C12A0800453DEA /* Distribution */,
 				7E3B359520EB86BB00690236 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Distribution;
 		};
 		7E3B359620EB86BB00690236 /* Build configuration list for PBXNativeTarget "AlMutlaqRealEstate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7E3B359720EB86BB00690236 /* Debug */,
+				886255D721C12A0800453DEA /* Distribution */,
 				7E3B359820EB86BB00690236 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Distribution;
 		};
 /* End XCConfigurationList section */
 

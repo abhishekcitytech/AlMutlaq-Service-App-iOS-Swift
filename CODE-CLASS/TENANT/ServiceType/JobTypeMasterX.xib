@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JobTypeMaster" customModule="AlMutlaqRealEstate" customModuleProvider="target">
+            <connections>
+                <outlet property="tabvMenu" destination="t0h-Kx-Wgq" id="ZAe-uf-hZl"/>
+                <outlet property="view" destination="iN0-l3-epB" id="yiR-xq-tmm"/>
+                <outlet property="viewtop" destination="tYC-E4-0kv" id="RNl-wq-MtZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tYC-E4-0kv">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="84"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kvd-qf-kW9">
+                            <rect key="frame" x="8" y="48" width="28" height="28"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="back-b"/>
+                            <connections>
+                                <action selector="pressBack:" destination="-1" eventType="touchUpInside" id="rus-Da-vUY"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Services" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQA-p2-2EG">
+                            <rect key="frame" x="68" y="44" width="238" height="36"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="21"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="84" id="Iir-Ek-ROG"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="t0h-Kx-Wgq">
+                    <rect key="frame" x="0.0" y="85" width="375" height="712"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="GYX-no-KMi"/>
+                        <outlet property="delegate" destination="-1" id="2so-UL-aRf"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="t0h-Kx-Wgq" secondAttribute="trailing" id="1ug-50-mRH"/>
+                <constraint firstItem="t0h-Kx-Wgq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="DUw-d2-ztP"/>
+                <constraint firstAttribute="bottom" secondItem="t0h-Kx-Wgq" secondAttribute="bottom" constant="15" id="P96-Mi-z4u"/>
+                <constraint firstItem="tYC-E4-0kv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ULr-Zc-6he"/>
+                <constraint firstItem="t0h-Kx-Wgq" firstAttribute="top" secondItem="tYC-E4-0kv" secondAttribute="bottom" constant="1" id="b3r-EL-vmT"/>
+                <constraint firstItem="tYC-E4-0kv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bik-gD-yDC"/>
+                <constraint firstAttribute="trailing" secondItem="tYC-E4-0kv" secondAttribute="trailing" id="c1X-mX-p3V"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <point key="canvasLocation" x="40.799999999999997" y="47.290640394088669"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back-b" width="32" height="32"/>
+    </resources>
+</document>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CSTasklist" customModule="AlMutlaqRealEstate" customModuleProvider="target">
+            <connections>
+                <outlet property="lblHeader" destination="FUe-5B-NKT" id="74a-5K-kG2"/>
+                <outlet property="tabvList" destination="4aR-IX-6fE" id="lGt-HP-cwv"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Xmr-1I-u3C"/>
+                <outlet property="viewtop" destination="5Rb-An-KjU" id="tbt-qJ-rxV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Rb-An-KjU">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="84"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUe-5B-NKT">
+                            <rect key="frame" x="68" y="38" width="238" height="36"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="21"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rET-DU-x2s">
+                            <rect key="frame" x="8" y="46" width="28" height="28"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="menu-w"/>
+                            <connections>
+                                <action selector="pressSlide:" destination="-1" eventType="touchUpInside" id="7DE-r5-Prj"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.30588235289999999" green="0.50588235290000005" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="84" id="4D5-Fk-RL8"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4aR-IX-6fE">
+                    <rect key="frame" x="0.0" y="84" width="375" height="716"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Zkd-Wn-VMV"/>
+                        <outlet property="delegate" destination="-1" id="A1w-iE-mXt"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="4aR-IX-6fE" firstAttribute="top" secondItem="5Rb-An-KjU" secondAttribute="bottom" id="7yi-Re-UoF"/>
+                <constraint firstItem="4aR-IX-6fE" firstAttribute="top" secondItem="5Rb-An-KjU" secondAttribute="bottom" id="Avo-9O-qd4"/>
+                <constraint firstAttribute="trailing" secondItem="4aR-IX-6fE" secondAttribute="trailing" id="KZQ-HE-d4F"/>
+                <constraint firstItem="5Rb-An-KjU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="eUQ-TH-PSt"/>
+                <constraint firstAttribute="bottom" secondItem="4aR-IX-6fE" secondAttribute="bottom" constant="12" id="kIv-gV-CwN"/>
+                <constraint firstAttribute="trailing" secondItem="5Rb-An-KjU" secondAttribute="trailing" id="puI-dl-ZaF"/>
+                <constraint firstItem="5Rb-An-KjU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="pxa-yg-dPw"/>
+                <constraint firstItem="4aR-IX-6fE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="vNu-Bx-dLI"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <point key="canvasLocation" x="42.399999999999999" y="46.551724137931039"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="menu-w" width="32" height="32"/>
+    </resources>
+</document>
